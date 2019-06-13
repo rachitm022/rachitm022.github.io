@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --public 192.168.1.1:8080 --mode development --open --hot",
+    "start": "webpack-dev-server --mode production --open --hot",
     "build": "webpack --mode production"
   },
   "keywords": [],
