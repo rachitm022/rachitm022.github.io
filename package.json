@@ -2,13 +2,13 @@
   "name": "wqreact",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "prod": "NODE_ENV=production node server.js",
     "postinstall": "webpack -p"
-    
+
   },
   "keywords": [],
   "author": "",
