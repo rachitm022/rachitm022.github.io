@@ -2,6 +2,46 @@ import React, { Component } from 'react';
 import './app.css';
 import ItemsCarousel from 'react-items-carousel';
 
+function ScrollTo(target, speed, timeout) {
+
+  if (!timeout) timeout = 0;
+  if (!speed) speed = 1000;
+
+  if (typeof target !== "undefined") {
+    //target = target.replace("#", ".");
+    //target = $(document.body).find(target);
+    setTimeout(function() {
+      $('html,body').animate({
+        scrollTop: $(target).offset().top - 140
+      }, speed);
+    }, timeout);
+  }
+}
+
+  window.onload = function(){
+           var refButton = document.getElementById("signup");
+
+            refButton.onclick = function() {
+                document.getElementById("signup-form").style.display="block";
+            }
+        }
+
+var modal= document.getElementById("x");
+window.onclick = function(event) {
+  if (event.target.id==modal.id) {
+    document.getElementById("signup-form").style.display = "none";
+
+  }
+};
+
+
+$("#navbar > nav > ul > li > a").click(function(e) {
+  // Prevent a page reload when a link is pressed
+  e.preventDefault();
+  // Call the scroll function
+  ScrollTo($(this).attr("href"), 0, 0); // target, speed, timeout
+});
+
 
 class App extends Component{
 	  componentWillMount() {
@@ -30,7 +70,6 @@ class App extends Component{
       activeItemIndex,
       children,
     } = this.state;
-
       return(
          <div id="wholepage">
 	<div class="section">
@@ -38,18 +77,38 @@ class App extends Component{
 	<nav>
 			<ul>
 				<li><a href="#"><img src="images/logo.png" width="50%"></img></a></li>
-				<li><a id="businesslink" href="#business">WHAT IS WORK COIN?</a></li>
-				<li><a id="gyaanlink" href="#gyaan">TOKEN SALE</a></li>
-				<li><a id="gyaanlink" href="#gyaan">ROAD MAP</a></li>
-				<li><a id="gyaanlink" href="#gyaan">APP</a></li>
-				<li><a id="gyaanlink" href="#gyaan">TEAM</a></li>
-				<li><a id="gyaanlink" href="#gyaan">CONTACT</a></li>
+				<li><a id="link" href="#about">WHAT IS WORK COIN?</a></li>
+				<li><a id="link" href="#sale">TOKEN SALE</a></li>
+				<li><a id="link" href="#road">ROAD MAP</a></li>
+				<li><a id="link" href="#mvp">APP</a></li>
+				<li><a id="link" href="#team">TEAM</a></li>
+				<li><a id="link" href="#contact">CONTACT</a></li>
 			</ul>
 		</nav>
 	</div>
 	<ul id="loginbar">
-				<li><a id="signup" href="#">SIGN&nbsp;UP</a></li>
+				<li><a id="signup" >SIGN&nbsp;UP</a></li>
 				<li><a id="login" href="#">LOGIN&nbsp;&nbsp;</a></li></ul>
+	<div id="signup-form" class="form">
+	<span id="x" class="close" title="Close Modal">&times;</span>
+	<form class="form-content" action="/action_page.php">
+	<div class="form-container">
+	<div id="left-form">
+	<img src="images/login.png" id="form-logo"></img></div>
+	<div id="right-form">
+	<img src="images/photo.png" id="photo"></img>
+	<label for="email"><p id="mediumletters5">USER NAME</p></label>
+      <input type="text2" placeholder="Enter Email" name="email" required />
+
+      <label for="psw"><p id="mediumletters5">ENTER PASSWORD</p></label>
+      <input type="text2" placeholder="Enter Password" name="psw" required />
+      <button type="submit" class="loginbtn">LOGIN</button>
+      <p id="mediumletters6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FORGOT &nbsp;PASSWORD?</p>
+      <p id="mediumletters7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DON'T HAVE AN ACCOUNT YET?<br /><br /></p>
+      <button type="submit" class="signupbtn">CREATE ACCOUNT</button>
+      <p id="mediumletters6"><br /><br /><br /></p>
+      </div>
+	</div></form></div>
 	<div id="left-box">
 		<p id="bigletters">WORK QUEST ICO STARTUP A GLOBAL JOB MARKETPLACE FOR ANY TYPE OF WORK.</p>
 		<p id="smallletters">WORK QUEST ICO STARTUP A GLOBAL JOB MARKETPLACE FOR ANY TIPE OF WORK.</p>
@@ -57,9 +116,15 @@ class App extends Component{
 		<p id="smallletters2">OUR PARTNERS</p>
 	</div>
 	<img src="images/illustration.png" id="right-logo"></img>
-	<img src="images/logotype partners.png" id="partners"></img>
+	<ul class="partners-list">
+				<li><a id="signup" href="https://eucc.eu/"><img src="images/EUCC.png" id="partners"></img></a></li>
+				<li><a id="login" href="https://globiance.com/"><img src="images/globiance.png" id="partners"></img></a></li>
+				<li><a id="login" href="http://attis-group.com/?page_id=252&lang=en"><img src="images/ag.png" id="partners"></img></a></li>
+				<li><a id="login" href="https://kcolbchain.com/"><img src="images/KCOLBCHAIN.png" id="partners"></img></a></li>
+				</ul>
+	
 	</div>
-	<div class="section">
+	<div class="section" id="about">
 		<div id="left-box2">
 			<p id="heading">ABOUT PROJECT</p>
 			<p id="bigletters">WORK COIN WHY DO WE USE IT?</p>
@@ -128,7 +193,7 @@ ZERO COST TO LIST NEW EMPLOYEES.</p>
 			</div>
 		</div>
 	</div>
-	<div class="section">
+	<div class="section" id="sale">
 	<p id="heading">TOKEN SALE INFO</p>
 		<p id="smallletters">THE WORK COIN WILL BE ISSUED AS AN INDEPENDENT BLOCKCHAIN<br /> WORK QUEST AND WE WILL ISSUE 2 BILLION TOKENS</p>
 	<div id="left-box2">
@@ -155,19 +220,19 @@ ZERO COST TO LIST NEW EMPLOYEES.</p>
 		<img src="images/ifd.png" id="small-logo2" />
 	</div>
 	</div>
-	<div class="section">
+	<div class="section" id="road">
 	<p id="heading">ROAD MAP</p>
 	<p id="smallletters">WITH HELP FROM OUR TEAMS, CONTRIBUTORS AND INVESTORS THESE<br />ARE THE MILESTONES WE ARE LOOKING FORWARD TO ACHEIVE</p>
 	
 	<div style={{"padding":"0 60px","maxWidth":900,"margin":"auto auto"}}>
   <ItemsCarousel
-    placeholderItem={<div style={{ height: 200, background: '#EEE' }} />}
+    placeholderItem={<div style={{ height: 150, background: '#EEE' }} />}
     enablePlaceholder={true}
     numberOfPlaceholderItems={3}
     numberOfCars={3}
     gutter={12}
     slidesToScroll={2}
-    chevronWidth={60}
+    chevronWidth={73}
     outsideChevron={true}
     showSlither={false}
     firstAndLastGutter={false}
@@ -250,7 +315,7 @@ DATA AND EITHER PARTY TO A <br />CONTRACT WILL HAVE TO<br /> SEEK PERMISSION FRO
 			</div>
 		</div>
 	</div>
-	<div class="sectionxd">
+	<div class="sectionxd" id="mvp">
 	<p id="heading">MVP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 	<p id="smallletters5">OUR PROJECTS IS BASED ON WORK QUEST MARKETPLACE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 	<div id="left-box">
@@ -269,7 +334,7 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
 	</div>
 	</div>
 	</div>
-	<div class="sectionA">
+	<div class="sectionA" id="team">
 	<p id="heading">OUR TEAM</p>
 	<p id="smallletters">OUR TEAM IS PASSIONATE AND COMMITED TO DELIVER RESULTS. DIVERSITY IS<br /> KEY TO US AND DRIVING INNOVATION DESIRED ON WORK QUEST</p>
 	<div id="content">
@@ -290,7 +355,7 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
 			</div>
 		</div>
 	</div>
-	<div class="sectionA">
+	<div class="sectionA" id="contact">
 	<p id="heading">GET IN TOUCH</p>
 	<p id="smallletters">ANY QUESTION? REACH OUT TO US AND WE’LL GET BACK TO YOU SHORTLY.</p>
 	<div id="left-box2">
@@ -319,6 +384,7 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
 
   changeActiveItem(activeItemIndex){this.setState({ activeItemIndex });}
   createChildren(n){range(n).map(i => <div key={i} style={{ height: 200, background: '#333' }}>{i}</div>);}
+
 }
 
 export default App;
