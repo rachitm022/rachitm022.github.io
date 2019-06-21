@@ -127,6 +127,9 @@ button {
 .signupbtn{
 	background-color: #27A860;
 }
+.registerbtn{
+	background-color: #FF7C43;
+}
 input[type=text2]{
 	width:120%; 
   margin-top: 7%;
@@ -318,6 +321,39 @@ input[type=submit] {
 	width: 20%;
 	margin-top: -30%;
 	margin-left: -30%;
+}
+#icon-logo3{
+	z-index: 6;
+	position: absolute;
+	width: 40%;
+	margin-top: 6%;
+	margin-left: -50%;
+}
+#icon-logo4{
+	z-index: 6;
+	position: absolute;
+	width: 40%;
+	margin-top: 40%;
+	margin-left: -47%;
+}
+#login-text{
+	position: absolute;
+	z-index: 6;
+	margin-left: -57%;
+	color: white;
+	font-size: 250%;
+	width:20%;
+	text-align: left;
+}
+#signup-text{
+	position: absolute;
+	z-index: 6;
+	margin-top:-28%;
+	margin-left: -2%;
+	color: white;
+	font-size: 210%;
+	width:35%;
+	text-align: left;
 }
 #join{
 	background-color: #3EB5F1;

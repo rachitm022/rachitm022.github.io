@@ -20,8 +20,18 @@ function ScrollTo(target, speed, timeout) {
 
   window.onload = function(){
            var refButton = document.getElementById("signup");
+           var refButton2 = document.getElementById("login");
+           var refButton3 = document.getElementById("signup2");
 
             refButton.onclick = function() {
+                document.getElementById("signup-form").style.display="block";
+            }
+
+            refButton2.onclick = function() {
+                document.getElementById("login-form").style.display="block";
+            }
+
+             refButton3.onclick = function() {
                 document.getElementById("signup-form").style.display="block";
             }
         }
@@ -30,7 +40,7 @@ var modal= document.getElementById("x");
 window.onclick = function(event) {
   if (event.target.id==modal.id) {
     document.getElementById("signup-form").style.display = "none";
-
+    document.getElementById("login-form").style.display = "none";
   }
 };
 
@@ -89,14 +99,16 @@ class App extends Component{
 	<ul id="loginbar">
 				<li><a id="signup" >SIGN&nbsp;UP</a></li>
 				<li><a id="login" href="#">LOGIN&nbsp;&nbsp;</a></li></ul>
-	<div id="signup-form" class="form">
+	<div id="login-form" class="form">
 	<span id="x" class="close" title="Close Modal">&times;</span>
 	<form class="form-content" action="/action_page.php">
 	<div class="form-container">
 	<div id="left-form">
 	<img src="images/login.png" id="form-logo"></img></div>
+	<img src="images/wq.png" id="icon-logo3"></img>
 	<div id="right-form">
 	<img src="images/photo.png" id="photo"></img>
+	<p id="login-text">LOGIN AND JOIN ICO PRESALE</p>
 	<label for="email"><p id="mediumletters5">USER NAME</p></label>
       <input type="text2" placeholder="Enter Email" name="email" required />
 
@@ -105,10 +117,50 @@ class App extends Component{
       <button type="submit" class="loginbtn">LOGIN</button>
       <p id="mediumletters6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FORGOT &nbsp;PASSWORD?</p>
       <p id="mediumletters7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DON'T HAVE AN ACCOUNT YET?<br /><br /></p>
-      <button type="submit" class="signupbtn">CREATE ACCOUNT</button>
+      <button id="signup2" class="signupbtn">CREATE ACCOUNT</button>
       <p id="mediumletters6"><br /><br /><br /></p>
       </div>
 	</div></form></div>
+
+	<div id="signup-form" class="form">
+	<span id="x" class="close" title="Close Modal">&times;</span>
+	<form class="form-content" action="/action_page.php">
+	<div class="form-container">
+	<div id="left-form">
+	<img src="images/regis.png" id="form-logo"></img>
+	<p id="signup-text">ENTER BASIC INFORMATIOIN TO GET STARTED</p>
+	<img src="images/wq.png" id="icon-logo4"></img>
+	</div>
+	
+	<div id="right-form">
+	<label for="firstname"><p id="mediumletters5">FIRST NAME</p></label>
+      <input type="text2" placeholder="" name="firstname" required />
+
+      <label for="lastname"><p id="mediumletters5">LAST NAME</p></label>
+      <input type="text2" placeholder="" name="lastname" required />
+
+
+      <label for="username"><p id="mediumletters5">USER NAME</p></label>
+      <input type="text2" placeholder="" name="username" required />
+
+
+      <label for="mail"><p id="mediumletters5">MAIL</p></label>
+      <input type="text2" placeholder="" name="mail" required />
+
+
+      <label for="pass"><p id="mediumletters5">ENTER PASSWORD</p></label>
+      <input type="text2" placeholder="" name="pass" required />
+
+
+      <label for="confirm"><p id="mediumletters5">CONFIRM PASSWORD</p></label>
+      <input type="text2" placeholder="" name="confirm" required />
+
+      <button type="submit" class="registerbtn">REGISTRATION</button>
+      
+      <p id="mediumletters6"><br /><br /><br /></p>
+      </div>
+	</div></form></div>
+
 	<div id="left-box">
 		<p id="bigletters">WORK QUEST ICO STARTUP A GLOBAL JOB MARKETPLACE FOR ANY TYPE OF WORK.</p>
 		<p id="smallletters">WORK QUEST ICO STARTUP A GLOBAL JOB MARKETPLACE FOR ANY TIPE OF WORK.</p>
