@@ -101,7 +101,7 @@ class App extends Component{
 				<li><a id="login" href="#">LOGIN&nbsp;&nbsp;</a></li></ul>
 	<div id="login-form" class="form">
 	<span id="x" class="close" title="Close Modal">&times;</span>
-	<form class="form-content" action="/action_page.php">
+	<form class="form-content" action="./dashboard.html" method="get">
 	<div class="form-container">
 	<div id="left-form">
 	<img src="images/login.png" id="form-logo"></img></div>
@@ -114,7 +114,7 @@ class App extends Component{
 
       <label for="psw"><p id="mediumletters5">ENTER PASSWORD</p></label>
       <input type="text2" placeholder="Enter Password" name="psw" required />
-      <button type="submit" class="loginbtn">LOGIN</button>
+      <button type="submit" href="./dashboard.html" class="loginbtn">LOGIN</button>
       <p id="mediumletters6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FORGOT &nbsp;PASSWORD?</p>
       <p id="mediumletters7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DON'T HAVE AN ACCOUNT YET?<br /><br /></p>
       <button id="signup2" class="signupbtn">CREATE ACCOUNT</button>
@@ -414,7 +414,7 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
 	<p id="smallletters">+044 0123 4567<br /><br />info@workquest.co<br /><br />join us on telegram</p>
 	</div>
 	<div id="right-logo4">
-	<form action="/action_page.php">
+	<form action="/action_page.php" method="post">
   <p id="smallletters3">YOUR NAME</p><br />
   <input type="text" name="name" />
   <br />
