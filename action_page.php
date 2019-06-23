@@ -25,7 +25,7 @@
 	<div id="right-menu">
 		<div id="Dashboard" class="tabcontent">
  <div id="dashboard-head" class="header"><p id="header-text">DASHBOARD</p></div>
- <div id="user-input"><img src="images/user.png" id="user-logo" /><p id="user-name">Christopher Smith</p></div>
+ <div id="user-input"><img src="images/user.png" id="user-logo" /><p id="user-name"><?php echo $_POST["name"]; ?></p></div>
  <div class="dropdown">
  <a class="dropbtn" onclick="fdropdown()"><img src="images/arrow.png" id="arrow" /></a>
 <div class="dropdown-content1" id="Dropdwn">
@@ -47,7 +47,7 @@
 
 <div id="Wallet" class="tabcontent">
    <div id="wallet-head" class="header"><p id="header-text">WALLET</p></div>
-   <div id="user-input"><img src="images/user.png" id="user-logo" /><p id="user-name">Christopher Smith</p></div>
+   <div id="user-input"><img src="images/user.png" id="user-logo" /><p id="user-name"><?php echo $_POST["name"]; ?></p></div>
    <div class="dropdown">
  <a class="dropbtn" onclick="fdropdown2()"><img src="images/arrow.png" id="arrow" /></a>
 <div class="dropdown-content2" id="Dropdwn2">
@@ -79,7 +79,7 @@
 
 <div id="Tokens" class="tabcontent">
 	<div id="buy-head" class="header"><p id="header-text">BUY TOKEN</p></div>
-  <div id="user-input3"><img src="images/user.png" id="user-logo" /><p id="user-name3">Christopher Smith</p></div>
+  <div id="user-input3"><img src="images/user.png" id="user-logo" /><p id="user-name3"><?php echo $_POST["name"]; ?></p></div>
   <div class="dropdown">
  <a class="dropbtn" onclick="fdropdown3()"><img src="images/arrow.png" id="arrow3" /></a>
 <div class="dropdown-content3" id="Dropdwn3">
@@ -99,7 +99,7 @@
 
 <div id="Transactions" class="tabcontent">
   <div id="trans-head" class="header"><p id="header-text">TRANSACTIONS</p></div>
-  <div id="user-input"><img src="images/user.png" id="user-logo" /><p id="user-name">Christopher Smith</p></div>
+  <div id="user-input"><img src="images/user.png" id="user-logo" /><p id="user-name"><?php echo $_POST["name"]; ?></p></div>
   <div class="dropdown">
  <a class="dropbtn" onclick="fdropdown4()"><img src="images/arrow.png" id="arrow" /></a>
 <div class="dropdown-content4" id="Dropdwn4">
@@ -179,5 +179,4 @@ window.onclick = function(e) {
   }
 }
 </script>
-</body>
-</html>
+<?php echo $_POST["name"]; ?>

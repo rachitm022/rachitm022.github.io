@@ -414,7 +414,7 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
 	<p id="smallletters">+044 0123 4567<br /><br />info@workquest.co<br /><br />join us on telegram</p>
 	</div>
 	<div id="right-logo4">
-	<form action="/action_page.php" method="post">
+	<form action="action_page.php" method="post">
   <p id="smallletters3">YOUR NAME</p><br />
   <input type="text" name="name" />
   <br />
@@ -422,7 +422,7 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
   <input type="text" name="email" />
   <br /><br />
   <p id="smallletters3">YOUR MESSAGE</p><br />
-  <input type="text" name="email" id="xdx" />
+  <input type="text" name="message" id="xdx" />
   <br /><br />
   <input type="submit" value="SEND" />
 </form>
