@@ -29,7 +29,7 @@
  <div class="dropdown">
  <a class="dropbtn" onclick="fdropdown()"><img src="images/arrow.png" id="arrow" /></a>
 <div class="dropdown-content1" id="Dropdwn">
-    <a href="#"><div id="droplink">Profile</div></a>
+    <a class="tablinks" onclick="openTab(event, 'Profile')" id="profile-link"><div id="droplink">Profile</div></a>
     <a href="#"><div id="droplink">Logout</div></a>
 </div>
 </div>
@@ -51,7 +51,7 @@
    <div class="dropdown">
  <a class="dropbtn" onclick="fdropdown2()"><img src="images/arrow.png" id="arrow" /></a>
 <div class="dropdown-content2" id="Dropdwn2">
-    <a href="#"><div id="droplink">Profile</div></a>
+    <a class="tablinks" onclick="openTab(event, 'Profile')" id="profile-link"><div id="droplink">Profile</div></a>
     <a href="#"><div id="droplink">Logout</div></a>
 </div>
 </div>
@@ -83,7 +83,7 @@
   <div class="dropdown">
  <a class="dropbtn" onclick="fdropdown3()"><img src="images/arrow.png" id="arrow3" /></a>
 <div class="dropdown-content3" id="Dropdwn3">
-    <a href="#"><div id="droplink">Profile</div></a>
+    <a class="tablinks" onclick="openTab(event, 'Profile')" id="profile-link"><div id="droplink">Profile</div></a>
     <a href="#"><div id="droplink">Logout</div></a>
 </div>
 </div>
@@ -103,7 +103,7 @@
   <div class="dropdown">
  <a class="dropbtn" onclick="fdropdown4()"><img src="images/arrow.png" id="arrow" /></a>
 <div class="dropdown-content4" id="Dropdwn4">
-    <a href="#"><div id="droplink">Profile</div></a>
+    <a class="tablinks" onclick="openTab(event, 'Profile')" id="profile-link"><div id="droplink">Profile</div></a>
     <a href="#"><div id="droplink">Logout</div></a>
 </div>
 </div>
@@ -126,12 +126,41 @@
   </tr>
 </table>
 </div>
+
+<div id="Profile" class="tabcontent">
+  <div id="profile-head" class="header"><p id="header-text">PROFILE</p></div>
+  <div id="user-input4"><img src="images/user.png" id="user-logo" /><p id="user-name4"><?php echo $_POST["name"]; ?></p></div>
+  <div class="dropdown">
+ <a class="dropbtn" onclick="fdropdown5()"><img src="images/arrow.png" id="arrow4" /></a>
+<div class="dropdown-content5" id="Dropdwn5">
+    <a class="tablinks" onclick="openTab(event, 'Profile')" id="profile-link"><div id="droplink">Profile</div></a>
+    <a href="#"><div id="droplink">Logout</div></a>
+</div>
+</div>
+  <div id="center-fill2" class="fill">
+    <p id="fill-text2">PROFILE</p>
+    <label for="name"><p id="mediumletters">USER NAME</p></label>
+      <input type="text2" placeholder="" name="name" required />
+
+      <label for="mail"><p id="mediumletters">MAIL</p></label>
+      <input type="text2" placeholder="" name="mail" required />
+      <button type="submit" class="btn" id="updatebtn">UPDATE</button></div>
+
+      <div id="center-fill3" class="fill">
+    <p id="fill-text2">PROFILE</p>
+    <label for="currpass"><p id="mediumletters">CURRENT PASSWORD</p></label>
+      <input type="text2" placeholder="" name="cpass" required />
+
+      <label for="newpass"><p id="mediumletters">ENTER NEW PASSWORD</p></label>
+      <input type="text2" placeholder="" name="npass" required />
+      <label for="confirm"><p id="mediumletters">CONFIRM NEW PASSWORD</p></label>
+      <input type="text2" placeholder="" name="cnfnpass" required />
+      <button type="submit" class="btn" id="updatebtn2">SAVE CHANGES</button></div>
+</div>
+
 	</div>
 </div>
 <script>
-  function fdropdown() {
-  document.getElementById("Dropdwn").classList.toggle("show");
-}
 
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
@@ -150,23 +179,22 @@ document.getElementById("defaultOpen").click();
 
 function fdropdown() {
   document.getElementById("Dropdwn").classList.toggle("showmenu");
-  
-  
 }
+
 function fdropdown2() {
-  document.getElementById("Dropdwn2").classList.toggle("showmenu");
-  
-  
+  document.getElementById("Dropdwn2").classList.toggle("showmenu"); 
 }
+
 function fdropdown3() {
-  document.getElementById("Dropdwn3").classList.toggle("showmenu");
-  
-  
+  document.getElementById("Dropdwn3").classList.toggle("showmenu");  
 }
+
 function fdropdown4() {
-  document.getElementById("Dropdwn4").classList.toggle("showmenu");
-  
-  
+  document.getElementById("Dropdwn4").classList.toggle("showmenu"); 
+}
+
+function fdropdown5() {
+  document.getElementById("Dropdwn5").classList.toggle("showmenu"); 
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -179,4 +207,5 @@ window.onclick = function(e) {
   }
 }
 </script>
-<?php echo $_POST["name"]; ?>
+</body>
+</html>

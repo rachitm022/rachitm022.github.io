@@ -1,6 +1,7 @@
 body{
 	overflow-x: hidden;
 	overflow-y: hidden;
+		font-family: Arial, Regular;
 }
 #wholepage{
 	display: inline-block;
@@ -45,6 +46,14 @@ body{
 	margin-left:210%; 
 	margin-top: -33%;
 }
+#user-input4{
+	z-index: 2;
+	position: absolute;
+	width: 20%;
+	color: white;
+	margin-left:280%; 
+	margin-top: -45%;
+}
 #user-name{
 	position: absolute;
 	font-size: 150%;
@@ -57,6 +66,12 @@ body{
 	margin-top: -80%;
 	margin-left: 85%;
 }
+#user-name4{
+	position: absolute;
+	font-size: 150%;
+	margin-top: -110%;
+	margin-left: 110%;
+}
 #arrow{
 	position: absolute;
 	margin-left: 195%; 
@@ -66,6 +81,11 @@ body{
 	position: absolute;
 	margin-left: 275%; 
 	margin-top: -32%;
+}
+#arrow4{
+	position: absolute;
+	margin-left: 360%; 
+	margin-top: -45%;
 }
 
 hr{
@@ -163,6 +183,11 @@ hr{
 #trans-head{
 	background-color: #FFA604;
 	margin-left: -6.5%;
+}
+#profile-head{
+	background-color: #A9A6A7;
+	margin-left: -12%;
+	width: 470%;
 }
 .dash-box{
 	display: inline-block;
@@ -320,8 +345,10 @@ hr{
 	text-align: center;
 }
 #fill-text2{
-	padding-top: 0.5%;
+	margin-top: 2%;
+	margin-bottom: 0%;
 	text-align: center;
+	font-size: 120%;
 }
 #mediumletters{
 	font-size: 75%;
@@ -337,6 +364,17 @@ input[type=text]{
   border-radius: 12px; 
   background-color: white;
   margin-left: 15%;
+  color: white;
+}
+input[type=text2]{
+  width: 70%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border:solid 1px white;
+  border-radius: 12px; 
+  background-color: #20253B;
+  margin-left: 15%;
+  color: white;
 }
 button {
   color: white;
@@ -359,6 +397,18 @@ button {
 #buybtn{
 	background-color: #20253B;
 }
+#updatebtn{
+	background-color: #FFA604;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+#updatebtn2{
+	background-color: #FFA604;
+	padding-top: 1.8%;
+	padding-bottom: 1.8%;
+	margin-top: 0.7%;
+	margin-bottom: 0.5%;
+}
 .fill{
 	width: 100%;
 	color: white;
@@ -380,6 +430,26 @@ button {
 	margin-top: 30%;
 	margin-left:60%;
 	border-radius: 50px;
+}
+#center-fill2{
+	position: absolute;
+	width: 200%;
+	background-color: #FFF;
+	color: black;
+	margin-top: 0%;
+	margin-left:90%;
+	border-radius: 50px;
+	box-shadow: 2px 2px 5px 2px #888;
+}
+#center-fill3{
+	position: absolute;
+	width: 200%;
+	background-color: #FFF;
+	color: black;
+	margin-top: 93%;
+	margin-left:90%;
+	border-radius: 50px;
+	box-shadow: 2px 2px 5px 2px #888;
 }
 table{
 	width:200%;
@@ -415,6 +485,11 @@ td{
   display: block;
   
 }
+#Dropdwn5.showmenu{
+  display: block;
+  
+}
+
 .dropdown{
 	overflow: hidden;
 }
@@ -511,6 +586,43 @@ td{
 	display: block;
 	border-radius: 25px;
 	background-color: #FFA604;
+}
+.dropdown-content5{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	display: none;
+	text-align: center;
+	margin-left: 280%;
+	margin-top: -10%;
+	font-size: 120%;
+	background-color: #A9A6A7;
+	border-radius: 25px;
+	box-shadow: 1px 1px 1px 1px  #888888;
+}
+.dropdown-content5 a:hover {
+	background-color: #7D787A;
+}
+.dropdown-content5 a{
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	display: block;
+	border-radius: 25px;
+	background-color: #A9A6A7;
+}
+#profile-link{
+	width: 100%;
+	padding-left: 0%;
+	margin-top: 0%;
+	margin-left: 0%;
+	font-size: 100%;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	display: block;
+	border-radius: 25px;
 }
 #droplink{
 	border-radius: 25px;
