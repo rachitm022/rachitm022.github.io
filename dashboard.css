@@ -1,3 +1,4 @@
+
 body{
 	overflow-x: hidden;
 	overflow-y: hidden;
@@ -9,7 +10,8 @@ body{
 	font-family: Arial, Regular;
 }
 #left-menu{
-	width: 30%;
+	width: 40%;
+	height: 550px;
 	background-color: #0B0F28;
 	margin-top: -0.6%;
 	margin-left: -0.58%;
@@ -129,7 +131,7 @@ hr{
 	margin-top: 0.5%;
 	margin-left: -11%;
 	text-align: left;
-	font-size: 130%;
+	font-size: 100%;
 }
 .tabcontent{
 	position: absolute;
@@ -156,6 +158,10 @@ hr{
 	text-align: center;
 	margin-top: 20%;
 	font-size: 80%;
+}
+#right-menu{
+	margin-left: 10%;
+	margin-top: -108%;
 }
 .header{
 	padding-top: 1%;
@@ -206,13 +212,13 @@ hr{
 #box2{
 	position: absolute;
 	margin-left: 105%;
-	margin-top: -33.5%;
+	margin-top: -39%;
 	width: 92%;
 }
 #box4{
 	position: absolute;
 	margin-left: 105%;
-	margin-top: -35%;
+	margin-top: -40%;
 	width: 92%;
 }
 #box-text{
@@ -254,13 +260,13 @@ hr{
 #wallbox2{
 	position: absolute;
 	margin-left: 105%;
-	margin-top: -23%;
+	margin-top: -50%;
 	width: 92%;
 }
 #wallbox4{
 	position: absolute;
 	margin-left: 105%;
-	margin-top: -25%;
+	margin-top: -50%;
 	width: 92%;
 }
 #ico-start{
@@ -275,7 +281,7 @@ hr{
 	position: absolute;
 	margin-top: -20%;
 	margin-left: 40%;
-	font-size: 200%;
+	font-size: 150%;
 }
 #time1{
 	position: absolute;
@@ -420,7 +426,7 @@ button {
 #right-fill{
 	position: absolute;
 	background-color: #20253B;
-	margin-top: -50%;
+	margin-top: -100%;
 	margin-left:100%;
 }
 #center-fill{
@@ -630,5 +636,72 @@ td{
 	padding-bottom: 2%;
 	
 }
-
+@media only screen and (min-width: 800px) {
+#ico-text{
+	position: absolute;
+	margin-top: -20%;
+	margin-left: 40%;
+	font-size: 200%;
+}
+#left-menu{
+	width: 30%;
+	height: auto;
+	background-color: #0B0F28;
+	margin-top: -0.6%;
+	margin-left: -0.58%;
+}
+.header{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-left: -6.2%;
+	width: 400%;
+	margin-top: 3.3%;
+}
+#right-menu{
+	margin-left: 0%;
+	margin-top: 0%;
+}
+.tablinks{
+	display: inline-block;
+	background-color: #0B0F28;
+	color: white;
+	border:none;
+	width: 110%;
+	padding-left: 20%;
+	margin-top: 0.5%;
+	margin-left: -11%;
+	text-align: left;
+	font-size: 130%;
+}
+#box2{
+	position: absolute;
+	margin-left: 105%;
+	margin-top: -33.5%;
+	width: 92%;
+}
+#box4{
+	position: absolute;
+	margin-left: 105%;
+	margin-top: -35%;
+	width: 92%;
+}
+#wallbox2{
+	position: absolute;
+	margin-left: 105%;
+	margin-top: -23%;
+	width: 92%;
+}
+#wallbox4{
+	position: absolute;
+	margin-left: 105%;
+	margin-top: -25%;
+	width: 92%;
+}
+#right-fill{
+	position: absolute;
+	background-color: #20253B;
+	margin-top: -50%;
+	margin-left:100%;
+}
+}
 
