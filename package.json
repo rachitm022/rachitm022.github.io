@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot --port 8080 --host 0.0.0.0",
+    "start": "webpack-dev-server --mode development --open --hot --port 8080 --host 192.168.1.5",
     "build": "webpack --mode production",
     "prod": "node server.js",
     "postinstall": "webpack -p"
