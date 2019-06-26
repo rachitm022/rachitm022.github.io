@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot --public https://work-quest.herokuapp.com",
+    "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "prod": "node server.js",
     "postinstall": "webpack -p"
