@@ -1,1 +1,1 @@
-web: node indeex.js
+web: node main.js
