@@ -1,31 +1,39 @@
 import React, { Component } from 'react';
 import './app.css';
 import ItemsCarousel from 'react-items-carousel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faYoutube, faInstagram, faTelegram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Particles from 'react-particles-js';
+
 
 function ScrollTo(target, speed, timeout) {
 
   if (!timeout) timeout = 0;
-  if (!speed) speed = 1000;
+  if (!speed) speed = 800;
 
   if (typeof target !== "undefined") {
     //target = target.replace("#", ".");
     //target = $(document.body).find(target);
     setTimeout(function() {
-      $('html,body').animate({
-        scrollTop: $(target).offset().top - 140
-      }, speed);
+      $('wholepage').stop().animate({
+        scrollTop: $(target).offset().top
+      }, speed,'swing');
     }, timeout);
   }
 }
 
   window.onload = function(){
+  	
            var refButton = document.getElementById("signup");
            var refButton2 = document.getElementById("login");
            var refButton3 = document.getElementById("signup2");
            var navbar = document.getElementById("navbar");
+           var firstSection=document.getElementById("firstSection");
 			var sticky = navbar.offsetTop;
 
 
+			firstSection.style.opacity="1";
+			firstSection.style.transform="translate(0,0)";
             refButton.onclick = function() {
                 document.getElementById("signup-form").style.display="block";
             }
@@ -43,7 +51,7 @@ function ScrollTo(target, speed, timeout) {
 
 function myFunction1() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
+
     navbar.style.backgroundColor="white";
     var x= document.getElementsByClassName("links");
     var i;
@@ -51,9 +59,6 @@ function myFunction1() {
   x[i].style.color = "black";
 	}
 	document.getElementById("pageLogo").src="images/logo_dark.png";
-  }
-   else {
-    navbar.classList.remove("sticky");
   }
 }
 
@@ -79,14 +84,29 @@ window.onclick = function(event) {
   }
 };
 
+$(document).on("scroll", function () {
+  var pageTop = $(document).scrollTop()
+  var pageBottom = pageTop + $(window).height()
+  var tags = $(".section")
 
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i]
+
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible")
+    } else {
+      $(tag).removeClass("visible")
+    }
+  }
+});
 
 $("#navbar > nav > ul > li > a").click(function(e) {
   // Prevent a page reload when a link is pressed
   e.preventDefault();
   // Call the scroll function
-  ScrollTo($(this).attr("href"), 0, 0); // target, speed, timeout
+  ScrollTo($(this).attr("href"), 900,5); // target, speed, timeout
 });
+
 
 
 class App extends Component{
@@ -118,7 +138,55 @@ class App extends Component{
     } = this.state;
       return(
          <div id="wholepage">
-	<div class="section">
+	 <div style={{
+		position: "absolute",
+		top: 0,
+		left: 0,
+		width: "100%",
+	}}>
+	 <Particles params={{
+	    "particles": {
+	        "number": {
+	            "value": 50
+	        },
+	        "size": {
+	            "value": 6,
+	            "random": true
+	        },
+	        "color": {
+            "value": "#186287"
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#294079",
+            opacity: 1,
+            width: 0.6413648243462091
+          },
+          opacity: {
+            value:1,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false
+            }
+          }
+	    },
+	    
+
+	    "interactivity": {
+	        "events": {
+	            "onhover": {
+	                "enable": true,
+	                "mode": "repulse"
+	            }
+	        }
+	    }
+	}} 
+	canvasClassName="example"
+	 /></div>
 	<div id="navbar">
 	<nav>
 			<ul>
@@ -133,7 +201,8 @@ class App extends Component{
 				<li><a id="login" class="links" >LOGIN&nbsp;&nbsp;</a></li>
 			</ul>
 		</nav>
-	</div>				
+	</div>	
+				
 	<div id="login-form" class="form">
 	<span id="x" class="close" title="Close Modal">&times;</span>
 	<form class="form-content" action="./dashboard.html" method="get">
@@ -195,9 +264,9 @@ class App extends Component{
       <p id="mediumletters6"><br /><br /><br /></p>
       </div>
 	</div></form></div>
-
+	<div class="section" id="firstSection">
 	<div id="left-box">
-		<p id="bigletters">WORK QUEST ICO STARTUP A GLOBAL JOB MARKETPLACE FOR ANY TYPE OF WORK.</p>
+		<p id="bigletters">WORK QUEST ICO STARTUP A GLOBAL MARKETPLACE FOR ANY TYPE OF WORK</p>
 		<p id="smallletters">WORK QUEST ICO STARTUP A<br /> GLOBAL JOB MARKETPLACE<br /> FOR ANY TIPE OF WORK.</p>
 		<a id="join" href="#">SIGN UP TO JOIN</a>
 		<p id="smallletters2">OUR PARTNERS</p>
@@ -220,7 +289,7 @@ class App extends Component{
 		<p id="smallletters7">WORK QUEST AS A GLOBAL PROJECT THAT WOULD WORK AS A TOOL SEARCH AND COMMUNICATION OF WORKERS AND EMPLOYEES. IT IS AN ONLINE WORK MARKETPLACE CONNECTING ALL TYPES OF EMPLOYEES WITH WORKERS AROUND EVERY CORNER OF THE WORLD THROUGH A BLOCKCHAIN POWERED SMART CONTRACT.</p>
 
 		</div>
-		<img src="images/PLAY BUTTON.png" id="play-btn"></img>
+		<a href="https://www.youtube.com/watch?v=SSo_EIwHSd4" id="youtube"><img src="images/PLAY BUTTON.png" id="play-btn"></img></a>
 		<img src="images/ICO infographic.png" id="right-logo2"></img>
 	</div>
 	<div class="section">
@@ -243,7 +312,7 @@ class App extends Component{
 				<p id="smallletters3">WORK COIN, IS A<br></br> CRYPTOCURRENCY USED TO<br></br> CALCULATE REMUNERATION<br></br> BETWEEN AN EMPLOYEE AND<br></br> EMPLOYER IN THE WORK<br></br> QUEST NETWORK. </p> 
 			</div>
 		</div>
-		<a id="join2" href="#">DOWNLOAD WHITEPAPER</a>
+		<a id="join2" href="images/WORK QUEST white paper.pdf">DOWNLOAD WHITEPAPER</a>
 	</div>
 	<div class="section">
 		<p id="heading3">OUR FEATURES</p>
@@ -277,7 +346,7 @@ ZERO COST TO LIST NEW EMPLOYEES.<br></br><br></br></p>
 				<p id="smallletters4">BOTH EMPLOYERS AND EMPLOYEES<br></br> UNDERGO VETTING DURING PROFILE<br></br> CREATION TO ENSURE USER<br></br> LEGITIMACY. TRUSTWORTHY FEEDBACK<br></br> ON EACH QUEST TRANSACTED AND ITS<br></br> RECORDED ON BLOCKCHAIN NETWORK.<br /><br /><br /></p>
 			</div>
 			<div class="one-third">
-				<a id="pitchdeck" href="#">DOWNLOAD&nbsp;OUR&nbsp;PITCH&nbsp;DECK</a>
+				<a id="pitchdeck" href="images/WORK QUEST pitch deck.pdf">DOWNLOAD&nbsp;OUR&nbsp;PITCH&nbsp;DECK</a>
 			</div>
 		</div>
 	</div>
@@ -301,11 +370,11 @@ ZERO COST TO LIST NEW EMPLOYEES.<br></br><br></br></p>
 	<img src="images/isb.png" id="right-logo2" />
 	<div id="left-box3">
 		<p id="bigletters2">TOKEN DISTRIBUTION</p>
-		<img src="images/td.png" id="small-logo2" />
+		<img src="images/ifd.png" id="small-logo2" />
 	</div>
 	<div id="left-box4">
 		<p id="bigletters2">ICO FUNDS<br /> DISTRIBUTION</p>
-		<img src="images/ifd.png" id="small-logo2" />
+		<img src="images/td.png" id="small-logo2" />
 	</div>
 	</div>
 	<div class="section" id="road">
@@ -340,7 +409,7 @@ ZERO COST TO LIST NEW EMPLOYEES.<br></br><br></br></p>
     {children}
   </ItemsCarousel>
 </div>
-<div class="section">
+<div class="section" id="sectionX">
 	<p id="heading3">WHAT<br />TECHNOLOGY<br />IS BASED</p>
 	<p id="smallletters8">WORK QUEST BASED ON BLOCKCHAIN TECHNOLOGY.<br />
 BLOCKCHAIN TECHNOLOGY IS AN INCORRUPTIBLE DIGITAL LEDGER OF ECONOMIC TRANSACTIONS THAT CAN BE<br /> PROGRAMMED TO RECORD NOT JUST FINANCIAL TRANSACTIONS BUT VIRTUALLY EVERYTHING OF VALUE. OUR<br /> OBJECTIVE IS TO DEVELOP OWN BLOCKCHAIN KNOWN AS WORK QUEST BLOCKCHAIN AND WILL ALSO INTEGRATE<br /> SMART CONTRACTS TO EASE COMPLETION AND COMMUNICATION BETWEEN AN EMPLOYER AND EMPLOYEE IN THE<br /> PLATFORM</p>
@@ -360,7 +429,7 @@ BLOCKCHAIN TECHNOLOGY IS AN INCORRUPTIBLE DIGITAL LEDGER OF ECONOMIC TRANSACTION
 	<img src="images/Clip.png" id="right-logo3"></img>
 	<img src="images/bg.png" id="small-logo3"></img>
 </div>
-<div class="section-rel">
+<div id="section-rel" class="section">
 		<p id="heading3">PROBLEMS WE SOLVE<br /> ON GLOBAL JOB<br /> MARKETPLACE</p>
 		<div id="content">
 			<div class="one-third">
@@ -411,7 +480,7 @@ DATA AND EITHER PARTY TO A <br />CONTRACT WILL HAVE TO<br /> SEEK PERMISSION FRO
 	<img src="images/BLUE BG TEXT.png" id="small-logo5"></img>
 	<img src="images/xd.png" id="small-logo6"></img>
 	<div id="rel-box">
-	<p id="bigletters">WORK COIN PROJECT</p>
+	<p id="bigletters">WORK&nbsp;COIN PROJECT</p>
 	<p id="smallletters6">WORK QUEST IS BASED ON OWN BLOCKCHAIN COUPLED WITH ITS OWN SMART CONTRACT SYSTEM. USERS BOTH EMPLOYERS AND EMPLOYEES WILL BE ABLE TOCREATE PROFILES ON THE PLATFORM AND THEIR DATA IS SAFELY SECURED BY THE BLOCKCHAIN.<br /> <br /> 
 
 USERS UPON VETTING THEIR PROFILE IS UPDATED ON THE PLATFORM. WHEN CREATING A QUEST USER FILLS IN ALL NECESSARY INFORMATION INCLUDING CONDITIONS FOR EXECUTION, ANNOUNCED COST AND URGENCY OF EXECUTION.
@@ -422,7 +491,7 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
 	</div>
 	</div>
 	</div>
-	<div class="sectionA" id="team">
+	<div class="section" id="team">
 	<p id="heading3">OUR TEAM</p>
 	<p id="smallletters9">OUR TEAM IS PASSIONATE AND COMMITED TO DELIVER RESULTS. DIVERSITY IS<br /> KEY TO US AND DRIVING INNOVATION DESIRED ON WORK QUEST</p>
 	<div id="content">
@@ -443,7 +512,7 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
 			</div>
 		</div>
 	</div>
-	<div class="sectionA" id="contact">
+	<div class="section" id="contact">
 	<p id="heading3">GET IN TOUCH</p>
 	<p id="smallletters8">ANY QUESTION? REACH OUT TO US AND WE’LL GET BACK TO YOU SHORTLY.</p>
 	<div id="left-box2">
@@ -466,15 +535,23 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
 </div>
 <img src="images/bg.png" id="small-logo"></img>
 <div id="footer">
-  <div class="col-sm-4"><p id="bigletters">WORK COIN</p>
+  <div class="col-sm-4"><img src="images/logo.png" id="footer-logo" /><p id="bigletters4">WORK COIN</p>
   <p id="smallletters14">WORK COIN IS A CRYPTOCURRENCY USED TO CALCULATE RENUMERATION BETWEEN AN EMPLOYER AND AN EMPLOYEE IN THE WORKQUEST NETWORK. THE COIN IS ALSO USED TO FACILITATE PAYMENT TRANSACTION OF ANY TYPE WITHIN OUR WORKQUEST ECOSYSTEM.</p>
+  <ul class="social-icons">
+  	<li><a href="#"><FontAwesomeIcon icon={faFacebook} size="3x" /></a></li>
+  	<li><a href="#"><FontAwesomeIcon icon={faTwitter} size="3x" /></a></li>
+  	<li><a href="#"><FontAwesomeIcon icon={faYoutube} size="3x" /></a></li>
+  	<li><a href="#"><FontAwesomeIcon icon={faInstagram} size="3x" /></a></li>
+  	<li><a href="#"><FontAwesomeIcon icon={faTelegram} size="3x" /></a></li>
+  	<li><a href="#"><FontAwesomeIcon icon={faLinkedin} size="3x" /></a></li>
+  </ul>
   </div>
-  <div class="col-sm-4"><p id="bigletters">USEFUL LINKS</p>
+  <div class="col-sm-4"><p id="bigletters4">USEFUL LINKS</p>
   <p id="smallletters15">PRIVACY POLICY</p>
   <p id="smallletters15">JOIN US</p>
   <p id="smallletters15">TERMS AND CONDITIONS</p>
   </div>
-  <div class="col-sm-4"><p id="bigletters">CONTACT US</p>
+  <div class="col-sm-4"><p id="bigletters4">CONTACT US</p>
   <p id="smallletters14">MAILING ADDRESS: XX00 E. UNION AVE</p>
   <p id="smallletters14">SUITE 1100. DENVER, CO 80237</p>
   <p id="smallletters14">+999 90932 627</p>
