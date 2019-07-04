@@ -309,11 +309,11 @@ input[type=text2]{
 #smallletters{font-size: 100%;line-height: 110%;font-weight: lighter;}
 #smallletters7{font-size: 90%;font-weight: lighter;}
 #smallletters2{font-size: 80%;padding-top: 15%;}
-#smallletters3{text-align: left;font-size: 80%;margin-left: 25%;}
-#smallletters4{text-align: center;font-size: 80%;margin-left: 0%;}
+#smallletters3{text-align: left;font-size: 90%;margin-left: 25%;}
+#smallletters4{text-align: center;font-size: 90%;margin-left: 0%;line-height: 150%;}
 #smallletters5{font-size: 80%;margin-bottom: -5%;}
-#smallletters6{font-size: 100%;width: 200%;line-height: 110%;}
-#smallletters8{margin-left:13%;font-size: 100%;line-height: 110%;font-weight: lighter;}
+#smallletters6{font-size: 100%;width: 200%;line-height: 135%;}
+#smallletters8{margin-left:13%;font-size: 100%;line-height: 150%;font-weight: lighter;}
 #smallletters9{margin-left:10%;font-size: 100%;line-height: 110%;font-weight: lighter;}
 #smallletters10{margin-left:25%;font-size: 100%;line-height: 110%;font-weight: lighter;}
 #smallletters11{margin-left:-70%;font-size: 100%;font-weight: lighter;margin-top: 5%;margin-bottom: -10%;}
