@@ -27,6 +27,7 @@ function ScrollTo(target, speed, timeout) {
            var refButton = document.getElementById("signup");
            var refButton2 = document.getElementById("login");
            var refButton3 = document.getElementById("signup2");
+           var refButton4 = document.getElementById("join");
            var navbar = document.getElementById("navbar");
            var firstSection=document.getElementById("firstSection");
 			var sticky = navbar.offsetTop;
@@ -43,6 +44,10 @@ function ScrollTo(target, speed, timeout) {
             }
 
              refButton3.onclick = function() {
+                document.getElementById("signup-form").style.display="block";
+            }
+
+            refButton4.onclick = function() {
                 document.getElementById("signup-form").style.display="block";
             }
 
@@ -142,7 +147,7 @@ class App extends Component{
 		position: "absolute",
 		top: 0,
 		left: 0,
-		width: "100%",
+		width: "111%",
 	}}>
 	 <Particles params={{
 	    "particles": {
@@ -268,7 +273,7 @@ class App extends Component{
 	<div id="left-box">
 		<p id="bigletters">WORK QUEST ICO STARTUP A GLOBAL MARKETPLACE FOR ANY TYPE OF WORK</p>
 		<p id="smallletters">WORK QUEST ICO STARTUP A<br /> GLOBAL JOB MARKETPLACE<br /> FOR ANY TIPE OF WORK.</p>
-		<a id="join" href="#">SIGN UP TO JOIN</a>
+		<a id="join">SIGN UP TO JOIN</a>
 		<p id="smallletters2">OUR PARTNERS</p>
 	</div>
 	<img src="images/a.png" id="right-logo"></img>
@@ -533,7 +538,7 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
 </form>
 	</div>	
 </div>
-<img src="images/bg.png" id="small-logo"></img>
+<img src="images/bg.png" id="small-logo7"></img>
 <div id="footer">
   <div class="col-sm-4"><img src="images/logo.png" id="footer-logo" /><p id="bigletters4">WORK COIN</p>
   <p id="smallletters14">WORK COIN IS A CRYPTOCURRENCY USED TO CALCULATE RENUMERATION BETWEEN AN EMPLOYER AND AN EMPLOYEE IN THE WORKQUEST NETWORK. THE COIN IS ALSO USED TO FACILITATE PAYMENT TRANSACTION OF ANY TYPE WITHIN OUR WORKQUEST ECOSYSTEM.</p>
