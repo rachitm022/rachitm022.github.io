@@ -319,7 +319,7 @@ input[type=text2]{
 	font-size: 90%;
 	line-height: 150%;
 	width: 100%;
-	text-align: center;
+	text-align: left;
 	color: #7ab9ff;
 }
 #mediumletters3{
@@ -858,10 +858,11 @@ nav ul li a{
 	font-weight: bold;
 }
 #mediumletters2{
-	font-size: 150%;
+	font-size: 100%;
 	line-height: 100%;
 	width: 100%;
 	text-align: left;
+	color: white;
 }
 #mediumletters3{
 	font-size: 100%;
