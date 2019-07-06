@@ -27,6 +27,22 @@ width: 100%;
 	text-decoration: none;
 	color: white;
 }
+.navbar-toggle{
+	cursor: pointer;
+	width: 50%;
+}
+.icon-bar{
+	background-color: white;
+	margin-left: 70%;
+	margin-top: -15%;
+}
+#pageLogo{
+	display: none;
+}
+#myNavbar{
+	width: 100%;
+	margin-left: 30%;
+}
 .example{
 	display:none;
 }
@@ -79,10 +95,13 @@ ul li{
 	border-width: 10px;
 	border-color: #3EB5F1;
 }
-
+#mobile-logo{
+	width: 90%;
+	margin-left: -200%;
+}
 
 nav ul {
-
+	width: 35%;
     list-style-type: none;
 	margin-top: 0%;
 	margin-left: -7%;
@@ -119,7 +138,7 @@ margin-left: -5%;
 	padding-right: 15%;
 	padding-top: 5%;
 	padding-bottom: 5%;	
-	margin-left: 10%;
+	margin-left: -10%;
 }
 #login{
 	cursor: pointer;
@@ -131,7 +150,7 @@ margin-left: -5%;
 	padding-right: 15%;
 	padding-top: 5%;
 	padding-bottom: 5%;
-	margin-left: 70%;	
+	margin-left: -5%;	
 }
 button {
   color: white;
@@ -287,6 +306,10 @@ input[type=text2]{
 #slider{
 	margin-left: 0%;
 	margin-bottom: 10%;
+}
+#slider-images{
+	width: 80px;
+	height: 350px;
 }
 #bigletters{
 	padding-top: 70%;
@@ -530,10 +553,10 @@ ul.social-icons{
   transition: all 0.2s ease-in-out;
 	border-color: #27A860;
 	border-radius: 25px;
-	padding-left: 3%;
-	padding-right: 3%;
-	padding-top: 1%;
-	padding-bottom: 1%;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-top:4%;
+	padding-bottom: 4%;
 	font-size: 80%;
 	position: absolute;
 	margin-top: -5%;
@@ -699,7 +722,14 @@ overflow-x: hidden;}
 	text-decoration: none;
 	color: white;
 }
-
+#pageLogo{
+	display: inline-block;
+}
+#myNavbar{
+	width: 100%;
+	margin-left: 0%;
+	background-color: initial;
+}
 #signup{
 	cursor: pointer;
 	border-style: solid;
@@ -773,7 +803,7 @@ nav ul {
 	margin-left: 3%;
     list-style-type: none;
 	margin-top: 0%;
-
+	width: 100%;
 }
 nav ul li{
 	display: inline-block;
@@ -789,7 +819,7 @@ nav ul li a{
 #left-box{
 	display: inline-block;
 	line-height: 270%;
-	width: 37%;
+	width: 35%;
 	margin-left: 12%;
 	margin-top: 7%;
 	text-align: left;
@@ -984,6 +1014,10 @@ margin-left: 0%;
 #slider{
 	margin-left: 22%;
 	margin-bottom: 10%;
+}
+#slider-images{
+	width: 300px;
+	height: 350px;
 }
 #join{
 	cursor: pointer;

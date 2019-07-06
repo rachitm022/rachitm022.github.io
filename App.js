@@ -124,11 +124,10 @@ class App extends Component{
     setTimeout(() => {
       this.setState({
         children: Array.from(new Array(8)).map((_, i) =>
-      <div
+      <div id="slider-images"
         key={i}
         style={{
-		  width:300,      
-          height: 350,
+		  
           background: 'url(../images/1.png)'
         }}
       />
@@ -194,6 +193,13 @@ class App extends Component{
 	 /></div>
 	<div id="navbar">
 	<nav>
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+		<img src="images/logo.png" id="mobile-logo"></img>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul>
 				<li><a href="#"><img src="images/logo.png" id="pageLogo" width="80%"></img></a></li>
 				<li><a id="link" class="links" href="#about">WHAT IS WORK COIN?</a></li>
@@ -205,6 +211,7 @@ class App extends Component{
 				<li><a id="signup" class="links" >SIGN&nbsp;UP</a></li>
 				<li><a id="login" class="links" >LOGIN&nbsp;&nbsp;</a></li>
 			</ul>
+			</div>
 		</nav>
 	</div>	
 				
