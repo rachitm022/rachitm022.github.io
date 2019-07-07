@@ -142,16 +142,16 @@ class App extends Component{
     } = this.state;
       return(
          <div id="wholepage">
-	 <div style={{
+	 <div id="particles" style={{
 		position: "absolute",
 		top: 0,
 		left: 0,
-		width: "111%",
+		
 	}}>
 	 <Particles params={{
 	    "particles": {
 	        "number": {
-	            "value": 50
+	            "value": 60
 	        },
 	        "size": {
 	            "value": 6,
@@ -301,7 +301,7 @@ class App extends Component{
 		<p id="smallletters7">WORK QUEST AS A GLOBAL PROJECT THAT WOULD WORK AS A TOOL SEARCH AND COMMUNICATION OF WORKERS AND EMPLOYEES. IT IS AN ONLINE WORK MARKETPLACE CONNECTING ALL TYPES OF EMPLOYEES WITH WORKERS AROUND EVERY CORNER OF THE WORLD THROUGH A BLOCKCHAIN POWERED SMART CONTRACT.</p>
 
 		</div>
-		<a href="https://www.youtube.com/watch?v=SSo_EIwHSd4" id="youtube"><img src="images/PLAY BUTTON.png" id="play-btn"></img></a>
+		<a href="https://www.youtube.com/watch?v=SSo_EIwHSd4" id="youtube"><img src="images/PLAY BUTTON.png" id="play-btn" class="play-btn"></img></a>
 		<img src="images/ICO infographic.png" id="right-logo2"></img>
 	</div>
 	<div class="section">
