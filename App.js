@@ -488,7 +488,7 @@ DATA AND EITHER PARTY TO A <br />CONTRACT WILL HAVE TO<br /> SEEK PERMISSION FRO
 	<p id="heading3">MVP</p>
 	<p id="smallletters10">OUR PROJECTS IS BASED ON WORK QUEST MARKETPLACE</p>
 	<div id="left-box">
-	<img src="images/macbook.png" id="small-logo4"></img>
+	<a href="Workquest/index.html"><img src="images/macbook.png" id="small-logo4" ></img></a>
 	<img src="images/BLUE BG TEXT.png" id="small-logo5"></img>
 	<img src="images/xd.png" id="small-logo6"></img>
 	<div id="rel-box">
@@ -545,32 +545,60 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
 </form>
 	</div>	
 </div>
-<img src="images/bg.png" id="small-logo7"></img>
-<div id="footer">
-  <div class="col-sm-4"><img src="images/logo.png" id="footer-logo" /><p id="bigletters4">WORK COIN</p>
-  <p id="smallletters14">WORK COIN IS A CRYPTOCURRENCY USED TO CALCULATE RENUMERATION BETWEEN AN EMPLOYER AND AN EMPLOYEE IN THE WORKQUEST NETWORK. THE COIN IS ALSO USED TO FACILITATE PAYMENT TRANSACTION OF ANY TYPE WITHIN OUR WORKQUEST ECOSYSTEM.</p>
-  <ul class="social-icons">
-  	<li><a href="#"><FontAwesomeIcon icon={faFacebook} size="3x" /></a></li>
-  	<li><a href="#"><FontAwesomeIcon icon={faTwitter} size="3x" /></a></li>
-  	<li><a href="#"><FontAwesomeIcon icon={faYoutube} size="3x" /></a></li>
-  	<li><a href="#"><FontAwesomeIcon icon={faInstagram} size="3x" /></a></li>
-  	<li><a href="#"><FontAwesomeIcon icon={faTelegram} size="3x" /></a></li>
-  	<li><a href="#"><FontAwesomeIcon icon={faLinkedin} size="3x" /></a></li>
-  </ul>
-  </div>
-  <div class="col-sm-4"><p id="bigletters4">USEFUL LINKS</p>
-  <p id="smallletters15">PRIVACY POLICY</p>
-  <p id="smallletters15">JOIN US</p>
-  <p id="smallletters15">TERMS AND CONDITIONS</p>
-  </div>
-  <div class="col-sm-4"><p id="bigletters4">CONTACT US</p>
-  <p id="smallletters14">MAILING ADDRESS: XX00 E. UNION AVE</p>
-  <p id="smallletters14">SUITE 1100. DENVER, CO 80237</p>
-  <p id="smallletters14">+999 90932 627</p>
-  <p id="smallletters14">SUPPORT@YOURDOMAIN.COM</p>
-  </div> 
+<div class="section" id="faq">
+<p id="heading3">FREQUENTLY ASKED<br /> QUESTIONS</p>
+<p id="smallletters8">BELOW WE’VE PROVIDED INFORMATION ABOUT WORKQUEST AND WORK<br /> COIN(WRC), AND FEW OTHERS, IF YOU HAVE ANY QUESTIONS, PLEASE GET IN<br /> TOUCH USING THE CONTACT FORM BELOW</p>
+<div class="half">
+<p id="mediumletters8">GENERAL</p>
+<p id="blueletters2">WHAT IS THE DIFFERENCE BETWEEN A WORK QUEST AND A WORK COIN</p>
+<p id="smallletters16">WORK QUEST IS A PLATFORM CONNECTING EMPLOYERS AND EMPLOYEES USING BLOCKCHAIN TECHNOLOGY. WORK COIN(WRC) IS THE TOKEN USED IN THE ECO-SYSTEM TO FACILITATE PAYMENTS AND OTHER TRANSACTIONS</p>
+<p id="blueletters2">WHAT CRYPTOCURRENCIES CAN I USE TO PURCHASE WRC?</p>
+<p id="smallletters16">ONE CAN USE ETH, BTC, LTC OR EVEN FIAT MONEY</p>
+<p id="blueletters2">HOW CAN I PARTICIPATE IN THE ICO TOKEN SALE?</p>
+<p id="smallletters16">IT IS EASY, REGISTER ON OUR WEBSITE, THE ACQUIRE THE ACCEPTED CRYPTOCURRENCIES NAMELY, BTC ETH AND LTH, SEND THE RESPECTIVE CRYPTOCURRENCY YOU PURCHASED AND HAVE IN YOUR WALLET OUR CAMPAIGN ADDRESS AND IN RETURN YOU RECEIVE THE WRC TOKENS AND THEN STORE THEM IN YOUR PREFERRED WALLET
+</p>
+<p id="blueletters2">WHO IS WORK QUEST TARGETED AT?</p>
+<p id="smallletters16">WORK QUEST TARGETS JOB SEEKERS AND EMPLOYERS WHO ARE WORLDS APART AND CAN PROVIDE THEIR SERVICES VIA AN ONLINE PLATORM WHILE GETTING THE BEST AWARD<br /><br /><br /><br /><br /><br /><br /></p>
+
+
 </div>
-  <p id="disclaimer">COPYRIGHT © 2019, WORKCOIN. ALL TRADE COPYRIGHTS BELONG TO THEIR <br />RESPECTIVE OWNERS</p> 
+<div class="half">
+<p id="mediumletters8">ICO</p>
+<p id="blueletters2">WHY DO YOU NEED AN ICO?<br /><br /></p>
+<p id="smallletters16">SUCCESFUL ICO WILL ENABE US DEVELOP AND ACQUIRE MORE BLOCKCHAIN AND CRYPTOCURRENCY TALENT TO CREATE A HIGHLY UNIQUE AND BENEFICIAL PLATFORM TO HELP OUR STAKEHOLDERS. ALL OUR PROCEEDS GO TO PRODUCT DEVELOPMENT RELATED ACTIVITIES AND LAUNCH AS WELL AS USER ACQUISATION
+</p>
+<p id="blueletters2">WHY SHOULD YOU INVEST IN OUR ICO?</p>
+<p id="smallletters16">WE ARE COMMMITED TO CREATE THE MOST ADVANCED AND TRUSTWORTHY PLATFORM THAT TRANSFORMS RELATIONS BETWEEN EMPLOTYERS AND EMPLOYEES IN THE INDUSTRY AND AT A GLOBAL SCALE. WE TARGET 3.5 MILLION USERS AND 10,000 CORPORATE USERS BY 2023</p>
+<p id="blueletters2">WHAT IS THE GOAL OF THE ICO CAMPAIGN?</p>
+<p id="smallletters16">THE MAXIMUM TARGET FOR THE CAMPAIGN IS $1O MILLION</p>
+<p id="blueletters2">HOW CAN YOU BE SURE WORK WILL COMMENCE AFTER TOKEN SALE?</p>
+<p id="smallletters16">WE ARE A TEAM OF PEOPLE DRIVEN BY RESULTS AND THIS IS EVIDENT FROM OUR PAST PROJECTS WIHTING THE ICO AND OUTSIDE THE ICO SPACE. THE TEAM EITHE RCOLLABORATIVELY OR INDIVIDUALLY HAVE BEEN INVOLVED IN INTERNATIONAL PROJECTS WHICH HAVE BEEN CONCLUDED TO FRUITION. WE ARE USING ICO FINACNING METHOD BECAUSE OF ITS AFFORDABILITY AND ABILITY TO INVOLVE OTHER PEOPLE WORLDWIDE IN OUR PROJECT</p>
+
+</div>
+</div>
+<img src="images/footer background.png" id="small-logo7"></img>
+<div id="footer">
+  <img src="images/Logotype.png" id="footer-logo" />
+  <ul class="footer-list">
+				<li><a id="link" href="#about">WHAT IS WORK COIN?</a></li>
+				<li><a id="link"  href="#sale">TOKEN SALE</a></li>
+				<li><a id="link"  href="#road">ROAD MAP</a></li>
+				<li><a id="link" href="#mvp">APP</a></li>
+				<li><a id="link" href="#team">TEAM</a></li>
+				<li><a id="link" href="#contact">CONTACT</a></li>
+				<li><a id="link" href="#faq" >FAQ</a></li>
+	</ul>
+	<ul class="social-icons">
+  	<li><a href="#"><FontAwesomeIcon icon={faFacebook} size="5x" /></a></li>
+  	<li><a href="#"><FontAwesomeIcon icon={faTwitter} size="5x" /></a></li>
+  	<li><a href="#"><FontAwesomeIcon icon={faYoutube} size="5x" /></a></li>
+  	<li><a href="#"><FontAwesomeIcon icon={faInstagram} size="5x" /></a></li>
+  	<li><a href="#"><FontAwesomeIcon icon={faTelegram} size="5x" /></a></li>
+  	<li><a href="#"><FontAwesomeIcon icon={faLinkedin} size="5x" /></a></li>
+  </ul>
+  <p id="footer-text">WORK COIN IS A CRYPTOCURRENCY USED TO CALCULATE RENUMERATION BETWEEN AN EMPLOYER AND AN EMPLOYEE IN THE WORKQUEST NETWORK. THE COIN IS ALSO USED TO FACILITATE PAYMENT TRANSACTION OF ANY TYPE WITHIN OUR WORKQUEST ECOSYSTEM.</p>
+  <p id="disclaimer">COPYRIGHT © 2019, WORKCOIN. ALL TRADE COPYRIGHTS BELONG TO THEIR RESPECTIVE OWNERS</p> 
+</div>
 </div>
       );
    }

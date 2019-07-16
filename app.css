@@ -476,13 +476,31 @@ input[type=text2]{
 ul.social-icons li{
 	display: inline-block;
 	margin-left: 2%;
-	margin-top: 0%;
+	margin-top: 13%;
 	padding-left: 0%;
-	padding-right: 2%;
+	padding-right: 5%;
 }
 
 ul.social-icons{
-	margin-left: 5%;
+	margin-left: 23%;
+}
+.fa-facebook{
+	color: #19609F;
+}
+.fa-twitter{
+	color: #19609F;
+}
+.fa-youtube{
+	color: #19609F;
+}
+.fa-instagram{
+	color: #19609F;
+}
+.fa-telegram{
+	color: #19609F;
+}
+.fa-linkedin{
+	color: #19609F;
 }
 .fa-facebook:hover{
 	color: #00AAFF;
@@ -740,7 +758,7 @@ overflow-x: hidden;}
 }
 #wholepage{
 	margin-left: -17%;
-	width: 117%;
+	width: 119%;
 	background-color: #20253B;
 	font-family: "Gotham";
 	color: white;
@@ -918,8 +936,10 @@ nav ul li a{
 #smallletters13{text-align:left;margin-left:-70%;font-size: 90%;font-weight: lighter;margin-top: 5%;margin-bottom: -10%;}
 #smallletters14{text-align: left;font-size: 90%;margin-left: 25%;width: 80%;line-height: 160%;}
 #smallletters15{text-align: left;font-size: 90%;margin-left: 22%;width: 80%;color:#8595DC;}
-#disclaimer{text-align: center;font-size: 80%;margin-left: 25%;width: 80%;color: #8595DC;position: absolute;z-index: 1;margin-top: -5%;}
+#smallletters16{font-size: 85%;line-height: 110%;font-weight: lighter;margin-left: 0%;margin-bottom: 5%;text-align: left;}
+#disclaimer{text-align: center;font-size: 80%;margin-left: 10%;width: 100%;color: #0C82C3;position: absolute;z-index: 1;margin-top: 11%;}
 #blueletters{color: #0C82C3;text-align: left;font-size: 100%;margin-top: 0%;}
+#blueletters2{color:#0C82C3;font-size: 90%;text-align: left;}
 
 #mediumletters{
 	font-size: 120%;
@@ -946,6 +966,13 @@ nav ul li a{
 	width: 10%;
 	text-align: center;
 	position: absolute;
+}
+#mediumletters8{
+	font-size: 120%;
+	line-height: 120%;
+	width: 100%;
+	text-align: left;
+	color: white;
 }
 input[type=text], select {
   width: 100%;
@@ -1010,11 +1037,16 @@ margin-left: 0%;
 	display: inline-block;
 	width: 30%; 
 }
+.half{
+	display: inline-block;
+	width: 25%;
+	margin-left:10%;
+}
 #play-btn{
 	position: absolute;
 	width: 10%;
 	margin-left: 22.55%;
-	margin-top:28.85%;
+	margin-top:28.15%;
 }
 @keyframes example{
 	from {width: 10%}
@@ -1114,6 +1146,7 @@ margin-left: 0%;
 }
 #small-logo7{
 	display: block;
+	margin-left: -5%;
 }
 #small-logo2{
 	width: 100%;
@@ -1172,7 +1205,23 @@ margin-left: 0%;
 	background-color: initial;
 }
 #footer-logo{
-	margin-left:15%; 
-	margin-bottom: 5%;
+	width: 20%;
+	margin-left:-60%; 
+	margin-top:-12%;
+}
+ul.footer-list {
+	margin-left: 20%;
+	margin-top: -20%;
+}
+ul.footer-list li{
+	padding-left: 2%;
+	padding-right: 2%;
+}
+#footer-text{
+	font-size: 80%;
+	width: 55%;
+	text-align: right;
+	margin-left: 33%;
+	margin-top: 3%;
 }
 }
