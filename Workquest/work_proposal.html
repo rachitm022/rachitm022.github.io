@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Employer Profile Workquest</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/work_proposal.css">
+<!--===============================================================================================-->
+</head>
+<body>	
+	<div class="limiter">
+		<div class="container-employer-prof" style="background:#ebedec; padding: 0px;">
+			<div class="row nav-style">
+				<div class="col-lg-4">
+					<img src="images/wqlogo.png" class="header-logo" alt="logo">
+					<div class="row header-opt mobile-view">
+						<div class="col-lg-2 pt6">
+							<div id="mySidenav" class="sidenav">
+								  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+								  <a href="#">Home</a>
+								  <a href="#">Notification</a>
+								  <a href="#">Settings</a>
+								  <a href="#">About</a>
+								  <a href="#">Services</a>
+								  <a href="#">Clients</a>
+								  <a href="#">Contact</a>
+							</div>
+							<span style="font-size:30px; cursor:pointer" onclick="openNav()"><img src="images/sidenav" alt="logo">
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 header-uname">
+					<h4>Your Name</h4>
+					<h6>Designation</h6>
+				</div>
+				<div class="col-lg-4">
+					<div class="row header-opt mobile-bar">
+						<div class="col-lg-2 header-opt-home ">
+							<img src="images/home" alt="logo">
+						</div>
+						<div class="col-lg-2 pt6" style="cursor: pointer;">
+							<img src="images/notification" alt="logo">
+						</div>
+						<div class="col-lg-2 pt6" style="cursor: pointer;">
+							<img src="images/setting" alt="logo">
+						</div>	
+						<div class="col-lg-2 pt6">
+							<div id="mySidenav1" class="sidenav">
+								  <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
+								  <a href="#">About</a>
+								  <a href="#">Services</a>
+								  <a href="#">Clients</a>
+								  <a href="#">Contact</a>
+							</div>
+							<span style="font-size:30px;cursor:pointer" onclick="openNav1()"><img src="images/sidenav" alt="logo">
+							</span>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="row proflie-emp-cont">
+				<div class="col-lg-8 profile-emp">
+					<div class="row">
+						<div class="col-lg-8 profile-lft">
+							<div class="row">
+								<img src="images/square.png" id="map" />
+								<img src="images/only [ one time ] location icons.png" id="map-1" />
+								<img src="images/radius selector.png" height="50vh" id="radS" />
+								<img src="images/refresh - button.png" height="80%" id="refresh" />
+								<img src="images/inform - button.png" id="info" height="80%" />
+								<p id="count-proposal">15&nbsp;Active&nbsp;proposals in your radius</p>
+								<img src="images/active.png" id="filter" height="80%">
+								<p class="params" id="params1">Lead time</p><img src="images/timer.png" id="timer" height="80%" />
+								<p class="params" id="params2">Proposal location 
+									according to your 
+									current location </p><img src="images/timer.png" id="location" height="80%" />
+								<p class="params" id="params3">Proposal status </p><p id="status">URGENTLY</p>
+				</div>	
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="row proflie-emp-cont-foot">
+				<div class="col-lg-2"></div>
+					<img src="images/photo proposal.png" id="proposal-logo" height="80%" />
+					<p id="proposal-title">Work proposal from Samanta Sparcs </p>
+					<p id="proposal-message">Hi<br /> 
+I’m urgently looking for a skilled man that can paint my Garage doors and a couple of walls around the garage... </p>
+					<p id="extra">Specialized quest</p>
+				<div class="col-lg-2"></div>	
+				<img src="images/view details - button.png" height="25%" id="view-details" />
+			</div>
+		</div>
+	
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	
+<!-- script for side nav -->
+
+	<script>
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		}
+
+		function openNav1() {
+		  document.getElementById("mySidenav1").style.width = "250px";
+		}
+
+		function closeNav1() {
+		  document.getElementById("mySidenav1").style.width = "0";
+		}
+	</script>
+</body>
+</html>
+
+
+
+<!-- <div class="row">
+	<div class="col-lg-5">
+		
+	</div>
+	<div class="col-lg-7"></div>
+</div> -->	
