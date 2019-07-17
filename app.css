@@ -264,6 +264,54 @@ input[type=text2]{
 	cursor: pointer;
 	margin-left: 70%;
 }
+#xx{
+	color: #FF0000;
+	position: absolute;
+	font-size: 200%;
+	cursor: pointer;
+	margin-left: 40%;
+}
+#forgot-pass{
+	display: none;
+	z-index: 6;
+	background-color: white;
+	color: black;
+	position: absolute;
+	width: 50%;
+	margin-top: 0%;
+	margin-left: 45%;
+	border-radius: 70px;
+	padding-top: 3%;
+	
+}
+#forgot-pass-email{
+	position: absolute;
+	z-index: 3;
+	margin-top: 5%;
+	background-color:#0C82C3;
+	color: white;
+	line-height: 50%;
+	display: block; 
+	width: 40%;
+	margin-left: 30%;
+}
+#forgot-pass-notif{
+	display:none;
+	z-index: 7;
+	background-color: white;
+	color: black;
+	position: absolute;
+	width: 50%;
+	margin-top: 0%;
+	margin-left: 45%;
+	border-radius: 70px;
+	padding-top: 3%;
+	
+}
+#forgot-img{
+	width: 100%;
+	margin-top: -33%;
+}
 .form {
   display: none;
   margin-top:-0.2%;
@@ -362,6 +410,10 @@ input[type=text2]{
 	font-size: 120%;
 	font-weight: bold;
 }
+#forgot-pass-mediumletters{
+	font-size: 200%;
+	font-weight: bold;
+}
 #mediumletters2{
 	font-size: 90%;
 	line-height: 150%;
@@ -393,6 +445,15 @@ input[type=text2]{
 	padding-bottom: 10%;
 }
 #mediumletters6{
+	font-size: 90%;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	margin-bottom: -6%;
+	margin-left: 10%;
+}
+#forgot-pass-text{
+	cursor: pointer;
 	font-size: 90%;
 	font-weight: bold;
 	width: 100%;
@@ -940,7 +1001,7 @@ nav ul li a{
 #disclaimer{text-align: center;font-size: 80%;margin-left: 10%;width: 100%;color: #0C82C3;position: absolute;z-index: 1;margin-top: 11%;}
 #blueletters{color: #0C82C3;text-align: left;font-size: 100%;margin-top: 0%;}
 #blueletters2{color:#0C82C3;font-size: 90%;text-align: left;}
-
+#pass-email-conf{width:50%;font-size: 150%;line-height: 125%;font-weight: lighter;margin-left: 25%;margin-bottom: 5%;text-align: center;}
 #mediumletters{
 	font-size: 120%;
 	font-weight: bold;
@@ -994,6 +1055,14 @@ input[type=submit] {
   border-color: #3EB5F1;
   border-radius: 15px;
   cursor: pointer;
+}
+input[type=text3], select {
+  width: 50%;
+  margin-top: 7%;
+  margin-left: 0%;
+  border: 1px solid #20253B;
+  border-radius: 25px;
+  background-color: inherit;
 }
 #xdx{
 	height: 70px;
@@ -1124,6 +1193,24 @@ margin-left: 0%;
   transition: all 0.2s ease-in-out;
 }
 #join2:hover{background-position:left bottom;}
+#join3{
+	background-color: #3EB5F1;
+	position: absolute;
+	z-index: 2;
+	border-color: #3EB5F1;
+	border-radius: 25px;
+	padding-left: 4%;
+	padding-right: 4%;
+	line-height: 300%;
+	font-size: 80%;
+	margin-left:-4.5%;
+	margin-top: -20%;
+	background: linear-gradient(to right, #F9BC4E 50%,#FFA604 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+  transition: all 0.2s ease-in-out;
+}
+#join3:hover{background-position:left bottom;}
 #pitchdeck{
 	background: linear-gradient(to right, #46B979 50%, #27A860 50%);
   background-size: 200% 100%;
@@ -1160,6 +1247,7 @@ margin-left: 0%;
 	position: relative;
 	display: block;
 }
+
 #small-logo5{
 	width: 200%;
 	margin-top: -150%;

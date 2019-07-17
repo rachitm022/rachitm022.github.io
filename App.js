@@ -28,6 +28,8 @@ function ScrollTo(target, speed, timeout) {
            var refButton2 = document.getElementById("login");
            var refButton3 = document.getElementById("signup2");
            var refButton4 = document.getElementById("join");
+           var refButton5 = document.getElementById("forgot-pass-text");
+           var refButton6 = document.getElementById("forgot-pass-email");
            var navbar = document.getElementById("navbar");
            var firstSection=document.getElementById("firstSection");
 			var sticky = navbar.offsetTop;
@@ -37,18 +39,33 @@ function ScrollTo(target, speed, timeout) {
 			firstSection.style.transform="translate(0,0)";
             refButton.onclick = function() {
                 document.getElementById("signup-form").style.display="block";
+                document.getElementById("firstSection").style.opacity = 0.8;
             }
 
             refButton2.onclick = function() {
                 document.getElementById("login-form").style.display="block";
+                document.getElementById("firstSection").style.opacity = 0.8;
             }
 
              refButton3.onclick = function() {
                 document.getElementById("signup-form").style.display="block";
+                document.getElementById("firstSection").style.opacity = 0.8;
             }
 
             refButton4.onclick = function() {
                 document.getElementById("signup-form").style.display="block";
+                document.getElementById("firstSection").style.opacity = 0.8;
+            }
+
+            refButton5.onclick = function() {
+                document.getElementById("forgot-pass").style.display="block";
+                document.getElementById("login-form").style.opacity = 0.8;
+                
+
+            }
+            refButton6.onclick = function() {
+                document.getElementById("forgot-pass-notif").style.display="block";
+             
             }
 
             window.onscroll = function() {myFunction1();myFunction2();};
@@ -82,10 +99,18 @@ function myFunction2() {
         }
 
 var modal= document.getElementById("x");
+var modal2= document.getElementById("xx");
 window.onclick = function(event) {
   if (event.target.id==modal.id) {
     document.getElementById("signup-form").style.display = "none";
     document.getElementById("login-form").style.display = "none";
+    document.getElementById("firstSection").style.opacity = 1;
+  }
+   if (event.target.id==modal2.id) {
+    document.getElementById("forgot-pass").style.display = "none";
+    document.getElementById("forgot-pass-notif").style.display = "none";
+    document.getElementById("login-form").style.opacity = 1;
+    
   }
 };
 
@@ -231,12 +256,25 @@ class App extends Component{
       <label for="psw"><p id="smallletters12">ENTER PASSWORD</p></label>
       <input type="text2" placeholder="Enter Password" name="psw" required />
       <button type="submit" href="./dashboard.html" class="loginbtn">LOGIN</button>
-      <p id="mediumletters6">FORGOT &nbsp;PASSWORD?</p>
+      <p id="forgot-pass-text">FORGOT &nbsp;PASSWORD?</p>
       <p id="mediumletters7"><br />DON'T HAVE AN ACCOUNT YET?<br /><br /></p>
       <button id="signup2" class="signupbtn">CREATE ACCOUNT</button>
       <p id="mediumletters6"><br /><br /><br /></p>
       </div>
 	</div></form></div>
+	<div id="forgot-pass" class="form">
+	<span id="xx" class="close" title="Close Modal">&times;</span>
+	<p id="forgot-pass-mediumletters">FORGOT YOUR<br /> PASSWORD?</p>
+	<p id="smallletters"> Don't worry, just enter your registered email and we'll send<br /> you a link to your registered email.</p>
+      <input type="text3" placeholder="Enter Email" name="email" required />
+      <button id="forgot-pass-email" >SEND</button>
+      <img src="images/Clip2.png" id="forgot-img" />
+	</div>
+	<div id="forgot-pass-notif" class="form">
+	<span id="xx" class="close" title="Close Modal">&times;</span>
+	<p id="forgot-pass-mediumletters">CHECK YOUR EMAIL</p>
+	<p id="pass-email-conf">We've sent an email to your mail. Click the link in the email to reset the password.<br /><br /><br />If you don't see the mail, check other plpaces it might be in spam or other folders.</p>
+	</div>
 
 	<div id="signup-form" class="form">
 	<span id="x" class="close" title="Close Modal">&times;</span>
@@ -488,7 +526,8 @@ DATA AND EITHER PARTY TO A <br />CONTRACT WILL HAVE TO<br /> SEEK PERMISSION FRO
 	<p id="heading3">MVP</p>
 	<p id="smallletters10">OUR PROJECTS IS BASED ON WORK QUEST MARKETPLACE</p>
 	<div id="left-box">
-	<a href="Workquest/index.html"><img src="images/macbook.png" id="small-logo4" ></img></a>
+	<img src="images/macbook.png" id="small-logo4" ></img>
+	<a id="join3" href="Workquest/index.html">ENTER PLATFORM</a>
 	<img src="images/BLUE BG TEXT.png" id="small-logo5"></img>
 	<img src="images/xd.png" id="small-logo6"></img>
 	<div id="rel-box">
