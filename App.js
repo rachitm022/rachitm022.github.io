@@ -527,6 +527,7 @@ DATA AND EITHER PARTY TO A <br />CONTRACT WILL HAVE TO<br /> SEEK PERMISSION FRO
 	<p id="smallletters10">OUR PROJECTS IS BASED ON WORK QUEST MARKETPLACE</p>
 	<div id="left-box">
 	<img src="images/macbook.png" id="small-logo4" ></img>
+	<img src="images/wqmac.jpg" id="laptop-image" ></img>
 	<a id="join3" href="Workquest/index.html">ENTER PLATFORM</a>
 	<img src="images/BLUE BG TEXT.png" id="small-logo5"></img>
 	<img src="images/xd.png" id="small-logo6"></img>
