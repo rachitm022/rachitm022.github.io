@@ -5,6 +5,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faYoutube, faInstagram, faTelegram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Particles from 'react-particles-js';
 
+// Set the date we're counting down to
+var countDownDate = new Date("Sept 1, 2019 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("exbox1").innerHTML = days;
+  document.getElementById("exbox2").innerHTML = hours;
+  document.getElementById("exbox3").innerHTML = minutes;
+  document.getElementById("exbox4").innerHTML = seconds;
+    
+  
+}, 1000);
+
 
 function ScrollTo(target, speed, timeout) {
 
@@ -254,7 +280,7 @@ class App extends Component{
       <input type="text2" placeholder="Enter Email" name="email" required />
 
       <label for="psw"><p id="smallletters12">ENTER PASSWORD</p></label>
-      <input type="text2" placeholder="Enter Password" name="psw" required />
+      <input type="password" placeholder="Enter Password" name="psw" required />
       <button type="submit" href="./dashboard.html" class="loginbtn">LOGIN</button>
       <p id="forgot-pass-text">FORGOT &nbsp;PASSWORD?</p>
       <p id="mediumletters7"><br />DON'T HAVE AN ACCOUNT YET?<br /><br /></p>
@@ -303,11 +329,11 @@ class App extends Component{
 
 
       <label for="pass"><p id="mediumletters5">ENTER PASSWORD</p></label>
-      <input type="text2" placeholder="" name="pass" required />
+      <input type="password" placeholder="" name="pass" required />
 
 
       <label for="confirm"><p id="mediumletters5">CONFIRM PASSWORD</p></label>
-      <input type="text2" placeholder="" name="confirm" required />
+      <input type="password" placeholder="" name="confirm" required />
 
       <button type="submit" class="registerbtn">REGISTRATION</button>
       
@@ -403,7 +429,15 @@ ZERO COST TO LIST NEW EMPLOYEES.<br></br><br></br></p>
 	<div class="section" id="sale">
 	<p id="heading3">TOKEN SALE INFO</p>
 		<p id="smallletters9">THE WORK COIN WILL BE ISSUED AS AN INDEPENDENT BLOCKCHAIN<br /> WORK QUEST AND WE WILL ISSUE 2 BILLION TOKENS</p>
-	<div id="left-box2">
+	<div id="right-logo5">
+	<p id="mediumletters">ICO WILL BE STARTED IN</p>
+		<div id="exbox1"></div><p id="time1">DAYS</p>
+ 	<div id="exbox2"></div><p id="time2">HOURS</p>
+ 	<div id="exbox3"></div><p id="time3">MINUTES</p>
+ 	<div id="exbox4"></div><p id="time4">SECONDS</p>
+ 	<a id="timer-button" href="#">JOIN AND BUY TOKEN NOW</a>
+	</div>
+	<div id="left-box5">
 		<p id="mediumletters2">OUR START</p>
 		<p id="blueletters">Jun 1, 2019 (12:00AM GMT)</p>
 		<p id="mediumletters2">END</p>
@@ -417,7 +451,7 @@ ZERO COST TO LIST NEW EMPLOYEES.<br></br><br></br></p>
 		<p id="mediumletters2">MINIMUM TRANSCATION AMOUNT</p>
 		<p id="blueletters">$50</p>
 	</div>
-	<img src="images/isb.png" id="right-logo2" />
+
 	<div id="left-box3">
 		<p id="bigletters2">TOKEN DISTRIBUTION</p>
 		<img src="images/ifd.png" id="small-logo2" />

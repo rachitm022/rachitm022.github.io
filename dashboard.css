@@ -382,6 +382,16 @@ input[type=text2]{
   margin-left: 15%;
   color: white;
 }
+input[type=text3]{
+  width: 70%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border:solid 2px white;
+  border-radius: 12px; 
+  background-color: #20253B;
+  margin-left: 15%;
+  color: white;
+}
 button {
   color: white;
   padding-top: 1.5%;
