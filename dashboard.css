@@ -366,9 +366,9 @@ input[type=text]{
   width: 70%;
   padding-top: 1%;
   padding-bottom: 1%;
-  border:solid 1px white;
+  border:solid 2px white;
   border-radius: 12px; 
-  background-color: white;
+  background-color: inherit;
   margin-left: 15%;
   color: white;
 }
@@ -405,10 +405,10 @@ button {
   margin-bottom: 2%;
 }
 #withdrawbtn{
-	background-color: #20253B;
+	background-color: #0C82C3;
 }
 #tokenbtn{
-	background-color: #283F79;
+	background-color: #0C82C3;
 }
 #buybtn{
 	background-color: #20253B;
