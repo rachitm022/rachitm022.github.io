@@ -256,9 +256,10 @@ class App extends Component{
 				<li><a id="link" class="links" href="#about">WHAT IS WORK COIN?</a></li>
 				<li><a id="link" class="links" href="#sale">TOKEN SALE</a></li>
 				<li><a id="link" class="links" href="#road">ROAD MAP</a></li>
-				<li><a id="link" class="links" href="#mvp">APP</a></li>
+				<li><a id="link" class="links" href="#mvp">MVP</a></li>
 				<li><a id="link" class="links" href="#team">TEAM</a></li>
 				<li><a id="link" class="links" href="#contact">CONTACT</a></li>
+				<li><a id="link" class="links" href="#faq">FAQ</a></li>
 				<li><a id="signup" class="links" >SIGN&nbsp;UP</a></li>
 				<li><a id="login" class="links" >LOGIN&nbsp;&nbsp;</a></li>
 			</ul>
@@ -275,12 +276,17 @@ class App extends Component{
 	<img src="images/wq.png" id="icon-logo3"></img>
 	<div id="right-form">
 	<img src="images/photo.png" id="photo"></img>
+	<p id="whiteprint">Login</p>
 	<p id="login-text">LOGIN AND JOIN ICO PRESALE</p>
 	<label for="email"><p id="smallletters13">USER NAME</p></label>
-      <input type="text2" placeholder="Enter Email" name="email" required />
-
+	<div class="input-container">
+    <img src="images/user-input.png" id="input-icons" />
+      <input type="text2" placeholder="Enter Email" name="email" required></input>
+      </div>
       <label for="psw"><p id="smallletters12">ENTER PASSWORD</p></label>
-      <input type="password" placeholder="Enter Password" name="psw" required />
+      <div class="input-container">
+    <img src="images/password icon.png" id="input-icons2" />
+      <input type="password" placeholder="Enter Password" name="psw" required /></div>
       <button type="submit" href="./dashboard.html" class="loginbtn">LOGIN</button>
       <p id="forgot-pass-text">FORGOT &nbsp;PASSWORD?</p>
       <p id="mediumletters7"><br />DON'T HAVE AN ACCOUNT YET?<br /><br /></p>
@@ -313,27 +319,40 @@ class App extends Component{
 	</div>
 	
 	<div id="right-form">
+	<p id="whiteprint2">Regis<br />tration</p>
 	<label for="firstname"><p id="mediumletters5">FIRST NAME</p></label>
-      <input type="text2" placeholder="" name="firstname" required />
+	 <div class="input-container">
+    <img src="images/user-input.png" id="input-icons" />
+      <input type="text2" placeholder="" name="firstname" required /></div>
 
       <label for="lastname"><p id="mediumletters5">LAST NAME</p></label>
-      <input type="text2" placeholder="" name="lastname" required />
+       <div class="input-container">
+    <img src="images/user-input.png" id="input-icons" />
+      <input type="text2" placeholder="" name="lastname" required /></div>
 
 
       <label for="username"><p id="mediumletters5">USER NAME</p></label>
-      <input type="text2" placeholder="" name="username" required />
+       <div class="input-container">
+    <img src="images/check-square.png" id="input-icons" />
+      <input type="text2" placeholder="" name="username" required /></div>
 
 
       <label for="mail"><p id="mediumletters5">MAIL</p></label>
-      <input type="text2" placeholder="" name="mail" required />
+       <div class="input-container">
+    <img src="images/mail.png" id="input-icons" />
+      <input type="text2" placeholder="" name="mail" required /></div>
 
 
       <label for="pass"><p id="mediumletters5">ENTER PASSWORD</p></label>
-      <input type="password" placeholder="" name="pass" required />
+       <div class="input-container">
+    <img src="images/password icon.png" id="input-icons2" />
+      <input type="password" placeholder="" name="pass" required /></div>
 
 
       <label for="confirm"><p id="mediumletters5">CONFIRM PASSWORD</p></label>
-      <input type="password" placeholder="" name="confirm" required />
+       <div class="input-container">
+    <img src="images/password icon.png" id="input-icons2" />
+      <input type="password" placeholder="" name="confirm" required /></div>
 
       <button type="submit" class="registerbtn">REGISTRATION</button>
       
@@ -342,7 +361,7 @@ class App extends Component{
 	</div></form></div>
 	<div class="section" id="firstSection">
 	<div id="left-box">
-		<p id="bigletters">WORK QUEST ICO STARTUP A GLOBAL MARKETPLACE FOR ANY TYPE OF WORK</p>
+		<p id="bigletters">WORK QUEST ICO STARTUP A GLOBAL MARKETPLACE FOR ANY TYPE OF WORK<br /><br /></p>
 		<p id="smallletters">WORK QUEST ICO STARTUP A<br /> GLOBAL JOB MARKETPLACE<br /> FOR ANY TIPE OF WORK.</p>
 		<a id="join">SIGN UP TO JOIN</a>
 		<p id="smallletters2">OUR PARTNERS</p>
@@ -465,7 +484,7 @@ ZERO COST TO LIST NEW EMPLOYEES.<br></br><br></br></p>
 	<p id="heading3">ROAD MAP</p>
 	<p id="smallletters9">WITH HELP FROM OUR TEAMS, CONTRIBUTORS AND INVESTORS THESE<br />ARE THE MILESTONES WE ARE LOOKING FORWARD TO ACHEIVE</p>
 	
-	<div id="slider" style={{"padding":"0 60px","maxWidth":1100}}>
+	<div id="slider" style={{"padding":"0 90px","maxWidth":1100}}>
   <ItemsCarousel
     placeholderItem={<div style={{ height: 150, background: '#EEE' }} />}
     enablePlaceholder={true}
@@ -561,7 +580,7 @@ DATA AND EITHER PARTY TO A <br />CONTRACT WILL HAVE TO<br /> SEEK PERMISSION FRO
 	<p id="smallletters10">OUR PROJECTS IS BASED ON WORK QUEST MARKETPLACE</p>
 	<div id="left-box">
 	<img src="images/macbook.png" id="small-logo4" ></img>
-	<img src="images/wqmac.jpg" id="laptop-image" ></img>
+	<img src="images/wqmac.png" id="laptop-image" ></img>
 	<a id="join3" href="Workquest/index.html">ENTER PLATFORM</a>
 	<img src="images/BLUE BG TEXT.png" id="small-logo5"></img>
 	<img src="images/xd.png" id="small-logo6"></img>
@@ -602,18 +621,18 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
 	<p id="heading3">GET IN TOUCH</p>
 	<p id="smallletters8">ANY QUESTION? REACH OUT TO US AND WE’LL GET BACK TO YOU SHORTLY.</p>
 	<div id="left-box2">
-	<p id="smallletters">+044 0123 4567<br /><br />info@workquest.co<br /><br />join us on telegram</p>
+	<p id="smallletters17">feedback@workquest.co<br /><br />join us on telegram</p>
 	</div>
 	<div id="right-logo4">
 	<form action="action_page.php" method="post">
   <p id="smallletters11">YOUR NAME</p><br />
-  <input type="text" name="name" />
+  <input type="text" name="name" onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode >= 48 && event.charCode <= 57)" />
   <br />
   <p id="smallletters11">YOUR EMAIL</p><br />
-  <input type="text" name="email" />
+  <input type="text" name="email" onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode >= 48 && event.charCode <= 57)" />
   <br /><br />
   <p id="smallletters11">YOUR MESSAGE</p><br />
-  <input type="text" name="message" id="xdx" />
+  <input type="text" name="message" id="xdx" onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode >= 48 && event.charCode <= 57)" />
   <br /><br />
   <input type="submit" value="SEND" />
 </form>
@@ -657,7 +676,7 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
 				<li><a id="link" href="#about">WHAT IS WORK COIN?</a></li>
 				<li><a id="link"  href="#sale">TOKEN SALE</a></li>
 				<li><a id="link"  href="#road">ROAD MAP</a></li>
-				<li><a id="link" href="#mvp">APP</a></li>
+				<li><a id="link" href="#mvp">MVP</a></li>
 				<li><a id="link" href="#team">TEAM</a></li>
 				<li><a id="link" href="#contact">CONTACT</a></li>
 				<li><a id="link" href="#faq" >FAQ</a></li>

@@ -224,38 +224,91 @@ hr{
 #box-text{
 	font-size: 150%;
 	margin-left: 5%;
+	box-shadow: 0.5px 0.5px 0px 0px #888;
 }
 #box-image1{
 	margin-left: 5%;
 	width: 18%;
+	padding-right: 2%;
+	padding-top: 6%;
+	margin-bottom: -1%;
+	padding-bottom: 1%;
+	margin-top: -6%;
+	box-shadow: 1px 0px 2px 0px #888;
 }
 #box-image2{
 	margin-left: 5%;
 	width: 16%;
+	padding-right: 5%;
+	padding-top: 6%;
+	margin-top: -6%;
+	margin-bottom: -1%;
+	padding-bottom: 1%;
+	box-shadow: 1px 0px 2px 0px #888;
 }
 #box-image3{
 	margin-left: 5%;
 	width: 14.5%;
+	padding-right: 5%;
+	padding-top: 6%;
+	margin-top: -6%;
+	margin-bottom: -1%;
+	padding-bottom: 1%;
+	box-shadow: 1px 0px 2px 0px #888;
 }
 #box-image4{
 	margin-left: 5%;
 	width: 16%;
+	padding-right: 5%;
+	padding-top: 6%;
+	margin-top: -6%;
+	margin-bottom: -1%;
+	padding-bottom: 1%;
+	box-shadow: 1px 0px 2px 0px #888;
 }
 #wallbox-image1{
 	margin-left: 5%;
-	width: 5%;
+	width: 12%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	margin-top: -6%;
+	margin-bottom: -1%;
+	padding-bottom: 1%;
+	box-shadow: 1px 0px 2px 0px #888;
 }
 #wallbox-image2{
 	margin-left: 5%;
-	width: 5%;
+	width: 12%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	margin-top: -6%;
+	margin-bottom: -1%;
+	padding-bottom: 1%;
+	box-shadow: 1px 0px 2px 0px #888;
 }
 #wallbox-image3{
 	margin-left: 5%;
-	width: 5%;
+	width: 12%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	margin-top: -6%;
+	margin-bottom: -1%;
+	padding-bottom: 1%;
+	box-shadow: 1px 0px 2px 0px #888;
 }
 #wallbox-image4{
 	margin-left: 5%;
-	width: 5%;
+	width: 12%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	margin-top: -6%;
+	margin-bottom: -1%;
+	padding-bottom: 1%;
+	box-shadow: 1px 0px 2px 0px #888;
 }
 #wallbox2{
 	position: absolute;
@@ -304,6 +357,9 @@ hr{
 	margin-top: -5%;
 }
 #exbox1{
+	font-size: 200%;
+	padding-top: 2%;
+	padding-left: 2%;
 	width: 50px;
 	height: 50px;
 	border-radius: 12px;
@@ -313,6 +369,9 @@ hr{
 	border:solid 2px white;
 }
 #exbox2{
+	font-size: 200%;
+	padding-top: 2%;
+	padding-left: 2%;
 		width: 50px;
 	height: 50px;
 	border-radius: 12px;
@@ -322,6 +381,9 @@ hr{
 	border:solid 2px white;
 }
 #exbox3{
+	font-size: 200%;
+	padding-top: 2%;
+	padding-left: 2%;
 		width: 50px;
 	height: 50px;
 	border-radius: 12px;
@@ -331,6 +393,9 @@ hr{
 	border:solid 2px white;
 }
 #exbox4{
+	font-size: 200%;
+	padding-top: 2%;
+	padding-left: 2%;
 		width: 50px;
 	height: 50px;
 	border-radius: 12px;
@@ -347,8 +412,9 @@ hr{
 	padding-bottom: 2%;
 }
 #fill-text1{
-	padding-top: 5%;
+	margin-top: 2%;
 	text-align: center;
+	font-size: 120%;
 }
 #fill-text2{
 	margin-top: 2%;
@@ -405,13 +471,15 @@ button {
   margin-bottom: 2%;
 }
 #withdrawbtn{
-	background-color: #0C82C3;
+	background-color: #20253B;
 }
 #tokenbtn{
-	background-color: #0C82C3;
+	background-color: #283F79;
 }
 #buybtn{
 	background-color: #20253B;
+	font-size: 150%;
+	font-weight: bold;
 }
 #updatebtn{
 	background-color: #FFA604;
@@ -429,9 +497,11 @@ button {
 	width: 100%;
 	color: white;
 	border-radius: 25px;
+	margin-top: -1%;
 }
 #left-fill{
 	background-color: #283F79;
+
 }
 #right-fill{
 	position: absolute;
@@ -698,19 +768,19 @@ td{
 #wallbox2{
 	position: absolute;
 	margin-left: 105%;
-	margin-top: -23%;
+	margin-top: -25%;
 	width: 92%;
 }
 #wallbox4{
 	position: absolute;
 	margin-left: 105%;
-	margin-top: -25%;
+	margin-top: -28%;
 	width: 92%;
 }
 #right-fill{
 	position: absolute;
 	background-color: #20253B;
-	margin-top: -50%;
+	margin-top: -48%;
 	margin-left:100%;
 }
 }
