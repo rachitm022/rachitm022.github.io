@@ -13,8 +13,17 @@ body{
 	width: 40%;
 	height: 550px;
 	background-color: #0B0F28;
+
 	margin-top: -0.6%;
 	margin-left: -0.58%;
+}
+#name{
+	display: none;
+	margin-left: 15%;
+	color: white;
+	font-size: 150%;
+	font-weight: bold;
+	padding-bottom: 80%;
 }
 #logo{
 	width: 80%;
@@ -22,8 +31,18 @@ body{
 	margin-top: 15%;
 }
 #overlay{
-	width: 40%;
+	width: 7%;
 	margin-left: 7%;
+	margin-top: 15%;
+}
+#overlay2{
+	width: 7%;
+	margin-left: 9%;
+	margin-top: 15%;
+}
+#overlay3{
+	width: 7%;
+	margin-left: 11%;
 	margin-top: 15%;
 }
 #user{
@@ -104,6 +123,19 @@ hr{
 	margin-left: 20%;
 	margin-top: -3%;
 }
+#menu2{
+	position: absolute;
+	display: none;
+	width: 2.5%;
+	margin-left: 7%;
+	margin-top: -2.5%;
+}
+#collapse-menu{
+	position: absolute;
+	width: 4%;
+	margin-left: 20%;
+	margin-top: -3%;
+}
 .tab{
 	display: inline-block;
 	margin-top:5%;
@@ -122,6 +154,7 @@ hr{
 	margin-right: 5%;
 }
 .tablinks{
+	position: relative;
 	display: inline-block;
 	background-color: #0B0F28;
 	color: white;
@@ -132,6 +165,15 @@ hr{
 	margin-left: -11%;
 	text-align: left;
 	font-size: 100%;
+	
+}
+.menu-text{
+	display: inline-block;
+	padding-top: 0;
+	padding-bottom: 0;
+	width: 50%;
+	margin-top: -10%;
+	margin-bottom: -10%;
 }
 .tabcontent{
 	position: absolute;

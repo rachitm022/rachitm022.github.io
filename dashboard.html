@@ -10,15 +10,19 @@
 <div id="wholepage">
 	<div id="left-menu">
 		<img src="images/wq.png" id="logo" />
-		<img src="images/Color Overlay.png" id="overlay" />
+		<img src="images/fb.png" id="overlay" />
+		<img src="images/twitter.png" id="overlay2" />
+		<img src="images/add.png" id="overlay3" />
+		<p id="name"> C. Smith</p>
 		<img src="images/photo1.png" id="user" />
 		<hr>
-		<img src="images/menu.png" id="menu" />	
+		<img src="images/menu.png" id="menu" />
+		<img src="images/menu.png" id="menu2" />	
 		<div class="tab">
-  	<button class="tablinks" onclick="openTab(event, 'Dashboard')" id="defaultOpen"><img src="images/dashboard icon.png" class="tab-icon" />Dashboard</button>
-  	<button class="tablinks" onclick="openTab(event, 'Wallet')"><img src="images/credit-card.png" class="tab-icon" />Wallet</button>
-  	<button class="tablinks" onclick="openTab(event, 'Tokens')"><img src="images/spider-web.png" class="tab-icon" />Buy Tokens</button>
-  	<button class="tablinks" onclick="openTab(event, 'Transactions')"><img src="images/browser.png" class="tab-icon" />Transactions</button>
+  	<button class="tablinks" onclick="openTab(event, 'Dashboard')" id="defaultOpen"><img src="images/dashboard icon.png" class="tab-icon" /><p class="menu-text">Dashboard</p></button>
+  	<button class="tablinks" onclick="openTab(event, 'Wallet')"><img src="images/credit-card.png" class="tab-icon" /><p class="menu-text">Wallet</p></button>
+  	<button class="tablinks" onclick="openTab(event, 'Tokens')"><img src="images/spider-web.png" class="tab-icon" /><p class="menu-text">Buy Tokens</p></button>
+  	<button class="tablinks" onclick="openTab(event, 'Transactions')"><img src="images/browser.png" class="tab-icon" /><p class="menu-text">Transactions</p></button>
 	</div>
 	<p id="copyright">Workquest.co 2019. All rights reserved</p>
 	</div>
@@ -162,7 +166,69 @@
 	</div>
 </div>
 <script>
+window.onload = function(){
+  	
+           var refButton = document.getElementById("menu");
+            var text = document.getElementsByClassName("menu-text");
+            var tab = document.getElementsByClassName("tab");
+  			var icon = document.getElementsByClassName("tab-icon");
+  			var header = document.getElementsByClassName("header");
+  			var overlay = document.getElementById("overlay");
+  			var overlay2 = document.getElementById("overlay2");
+  			var overlay3 = document.getElementById("overlay3");
+  			var user = document.getElementById("user");
+  			var menu = document.getElementById("menu");
+  			var menu2 = document.getElementById("menu2");
+  			var buyhead= document.getElementById("buy-head");
+  			var transhead= document.getElementById("trans-head");
 
+           refButton.onclick = function() {
+                document.getElementById("left-menu").style.width="150px";
+                document.getElementById("left-menu").style.height="625px";
+                
+                document.getElementById("right-menu").style.marginLeft="-10%";
+                for (i = 0; i < text.length; i++) {
+    			text[i].innerHTML = "";
+  					}
+
+  					for (i = 0; i < icon.length; i++) {
+    			icon[i].style.width = "25%";
+  					}
+  					for (i = 0; i < header.length; i++) {
+    			header[i].style.marginLeft = "-36.3%";
+  					}
+  					buyhead.style.width="440%";
+  					buyhead.style.marginLeft = "-52.5%";
+  					transhead.style.marginLeft="-38.5%";
+
+  					overlay.src="images/WQ logotype.png";
+  					overlay.style.width="50%";
+  					overlay.style.marginLeft="25%";
+  					overlay.style.marginTop="40%";
+
+  					overlay2.style.display="none";
+  					overlay3.style.display="none";
+
+  					user.style.marginLeft="1.5%";
+  					user.style.marginTop="-9%";
+  					user.style.width="7%";
+
+  					menu.style.display="none";
+  					menu2.style.display="block";
+  					
+
+  			document.getElementById("logo").style.display="none";
+  			document.getElementById("name").style.display = "block";
+  			
+            }
+
+
+            menu2.onclick = function() {
+               location.reload();
+                
+  			
+            }
+       }
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
