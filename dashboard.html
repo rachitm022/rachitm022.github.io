@@ -8,6 +8,48 @@
 <link rel="stylesheet" type="text/css" href="dashboard.css">
 <body>
 <div id="wholepage">
+	<div id="social-panel" class="form">
+	<span id="xx" class="close" title="Close Modal">&times;</span>
+	<p id="social-mediumletters">SOCIAL MEDIA CHANNELS</p>
+	<p id="smallletters"><b>YOU CAN CHOOSE ONLY FIVE CHANNELS, THAT CAN BE ATTACHED TO YOUR PROFILE</b><br /> PLEASE ADD YOUR PROFILE LINKS IN THE FOLLOWING FIELDS</p>
+      <div class="left-inputs">
+      <div class="input-container">
+    <img src="images/fac.png" id="input-icons" />
+      <input type="text4" placeholder="Enter Email" name="email" required></input>
+      </div>
+      <div class="input-container">
+    <img src="images/tw.png" id="input-icons" />
+      <input type="text4" placeholder="Enter Email" name="email" required></input>
+      </div>
+      <div class="input-container">
+    <img src="images/ins.png" id="input-icons" />
+      <input type="text4" placeholder="Enter Email" name="email" required></input>
+      </div>
+      <div class="input-container">
+    <img src="images/mess.png" id="input-icons" />
+      <input type="text4" placeholder="Enter Email" name="email" required></input>
+      </div>
+      </div>
+      <div class="right-inputs">
+      <div class="input-container">
+    <img src="images/g+.png" id="input-icons" />
+      <input type="text4" placeholder="Enter Email" name="email" required></input>
+      </div>
+      <div class="input-container">
+    <img src="images/in.png" id="input-icons" />
+      <input type="text4" placeholder="Enter Email" name="email" required></input>
+      </div>
+      <div class="input-container">
+    <img src="images/vk.png" id="input-icons" />
+      <input type="text4" placeholder="Enter Email" name="email" required></input>
+      </div>
+      <div class="input-container">
+    <img src="images/flik.png" id="input-icons" />
+      <input type="text4" placeholder="Enter Email" name="email" required></input>
+      </div>
+      </div>
+      <button id="save" >SAVE</button>
+	</div>
 	<div id="left-menu">
 		<img src="images/wq.png" id="logo" />
 		<img src="images/fb.png" id="overlay" />
@@ -181,6 +223,7 @@ window.onload = function(){
   			var menu2 = document.getElementById("menu2");
   			var buyhead= document.getElementById("buy-head");
   			var transhead= document.getElementById("trans-head");
+  			var modal= document.getElementById("xx");
 
            refButton.onclick = function() {
                 document.getElementById("left-menu").style.width="150px";
@@ -227,6 +270,12 @@ window.onload = function(){
                location.reload();
                 
   			
+            }
+             overlay3.onclick = function() {
+                document.getElementById("social-panel").style.display="block"; 
+            }
+            modal.onclick = function() {
+                document.getElementById("social-panel").style.display="none"; 
             }
        }
 function openTab(evt, tabName) {

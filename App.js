@@ -178,7 +178,7 @@ class App extends Component{
       <div id="slider-images"
         key={i}
         style={{
-		  
+		      
           background: 'url(../images/1.png)'
         }}
       />
@@ -484,7 +484,7 @@ ZERO COST TO LIST NEW EMPLOYEES.<br></br><br></br></p>
 	<p id="heading3">ROAD MAP</p>
 	<p id="smallletters9">WITH HELP FROM OUR TEAMS, CONTRIBUTORS AND INVESTORS THESE<br />ARE THE MILESTONES WE ARE LOOKING FORWARD TO ACHEIVE</p>
 	
-	<div id="slider" style={{"padding":"0 90px","maxWidth":1100}}>
+	<div id="slider" style={{"padding":"0 85px","maxWidth":1100}}>
   <ItemsCarousel
     placeholderItem={<div style={{ height: 150, background: '#EEE' }} />}
     enablePlaceholder={true}
@@ -524,8 +524,8 @@ BLOCKCHAIN TECHNOLOGY IS AN INCORRUPTIBLE DIGITAL LEDGER OF ECONOMIC TRANSACTION
 		<li class="blue"><img src="images/Ellipseb.png" id="blue-icon"></img>USER REGISTRATION</li>
 		<li class="green"><img src="images/Ellipse 1.png" id="green-icon"></img>QUEST CREATION</li>
 		<li class="grey"><img src="images/Ellipseg.png" id="grey-icon"></img>EMPLOYEE SEARCHING</li>
-		<li class="blue"><img src="images/Ellipseb.png" id="blue-icon"></img>SMART CONTRACT</li>
-		<li class="blue"><img src="images/Ellipseb.png" id="blue-icon"></img>EVALUATION OF<br /> &nbsp;&nbsp;&nbsp; COMPLETED WORK <br />
+		<li class="yellow"><img src="images/Ellipseb.png" id="blue-icon"></img>SMART CONTRACT</li>
+		<li class="orange"><img src="images/Ellipseb.png" id="blue-icon"></img>EVALUATION OF<br /> &nbsp;&nbsp;&nbsp; COMPLETED WORK <br />
 &nbsp;&nbsp;&nbsp;&nbsp;AND FEEDBACK</li>
 	</ul>
 	</div>

@@ -609,7 +609,6 @@ ul.social-icons{
 }
 .fa-facebook:hover{
 	color: #00AAFF;
-	background-color: white;
 	border-radius: 100%;
 }
 .fa-twitter:hover{
@@ -624,7 +623,7 @@ ul.social-icons{
 	border-radius: 18px;
 }.fa-telegram:hover{
 	color: #00AAFF;
-	background-color: white;
+
 	border-radius: 100%;
 }.fa-linkedin:hover{
 	color: #00AAFF;
@@ -822,14 +821,14 @@ margin-left: 15%;}
 margin-top: -30%;
 position: relative;
 z-index: 1;
-opacity: 1;
-transform: translate(0, 10px);
+
+transform: translate(0, -80px);
 }
 #sectionX{
 	opacity: 1;
 }
 .sectionxd{
-	margin-bottom: 20%;
+	margin-bottom: 15%;
 }
 #contact{
 	margin-top: 5%;
