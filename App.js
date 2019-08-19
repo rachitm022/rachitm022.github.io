@@ -524,8 +524,8 @@ BLOCKCHAIN TECHNOLOGY IS AN INCORRUPTIBLE DIGITAL LEDGER OF ECONOMIC TRANSACTION
 		<li class="blue"><img src="images/Ellipseb.png" id="blue-icon"></img>USER REGISTRATION</li>
 		<li class="green"><img src="images/Ellipse 1.png" id="green-icon"></img>QUEST CREATION</li>
 		<li class="grey"><img src="images/Ellipseg.png" id="grey-icon"></img>EMPLOYEE SEARCHING</li>
-		<li class="yellow"><img src="images/Ellipseb.png" id="blue-icon"></img>SMART CONTRACT</li>
-		<li class="orange"><img src="images/Ellipseb.png" id="blue-icon"></img>EVALUATION OF<br /> &nbsp;&nbsp;&nbsp; COMPLETED WORK <br />
+		<li class="yellow"><img src="images/Ellipse D.png" id="blue-icon"></img>SMART CONTRACT</li>
+		<li class="orange"><img src="images/Ellipse E.png" id="blue-icon"></img>EVALUATION OF<br /> &nbsp;&nbsp;&nbsp; COMPLETED WORK <br />
 &nbsp;&nbsp;&nbsp;&nbsp;AND FEEDBACK</li>
 	</ul>
 	</div>
