@@ -1462,9 +1462,10 @@ margin-left: 0%;
 	background-color: initial;
 }
 #footer-logo{
-	width: 20%;
+	width: 15%;
 	margin-left:-60%; 
 	margin-top:-12%;
+	margin-right: -6%;
 }
 ul.footer-list {
 	margin-left: 20%;
