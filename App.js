@@ -600,21 +600,57 @@ USING GEOLOCATION SERVICES AN EMPLOYER WILL SEARCH FOR PROSPECTIVE EMPLOYEES AND
 	<p id="heading3">OUR TEAM</p>
 	<p id="smallletters9">OUR TEAM IS PASSIONATE AND COMMITED TO DELIVER RESULTS. DIVERSITY IS<br /> KEY TO US AND DRIVING INNOVATION DESIRED ON WORK QUEST</p>
 	<div id="content">
-			<div class="one-third">
+			<div class="one-fourth">
 				<img src="images/ceo.png" id="small-logo"></img>
-				<p id="mediumletters">Andril Kotsur (CEO)</p>
-				<p id="smallletters3">Andrii expertise and experience<br /> includes knowledge of digital currency,<br /> how to manage a highly skilled team,<br /> building relationships and driving the<br /> company forward. Founder and main <br />ideologue of the project concept.<br /><br /><br /><br /><br /><br /></p>
+				<p id="mediumletters">Andril Kotsur (CEO)<br /><br /></p>
+				<p id="smallletters18">Andrii expertise and experience includes knowledge of digital currency, how to manage a highly skilled team, building relationships and driving the company forward. Founder and main ideologue of the project concept.</p>
+			
+        <img src="images/Ellipse 1067.png" id="small-logo"></img>
+        <p id="mediumletters">Oliver Marco La Rosa (Advisor)</p>
+        <p id="smallletters18">Co-Founder Globiance
+Board Member Maltese Italian Chamber of Commerce
+President at Government Blockchain Association Malta </p>
+      
+        <img src="images/Abhishek Krishna.png" id="small-logo"></img>
+        <p id="mediumletters">Abhishek Krishna</p>
+        <p id="smallletters18">Abhishek is a Tech Entrepreneur and started his first venture 6 years ago. Since then, he has built several products and has consulted and advised a few startups and corporations. He started coding in school and has a keen sense of product design too. He specializes in building product and technology teams. He currently runs Kcolbchain and Ojam.<br /><br /><br /><br /><br /></p> 
+      
+      </div>
+			<div class="one-fourth">
+          <img src="images/Ellipse 1065.png" id="small-logo"></img>
+        <p id="mediumletters">Amin Baradaran </p>
+        <p id="smallletters18">President of "Attis group", who incorporates the company CJSC "A algorithms and Systems" (Belarus) and also such companies as Attis Capital (Russia, Moscow), Stars Factor (Kazakhstan), One Small Planet (China), Kontinentas (Lithuania), Sabre Invest (Latvia), Monolit (Russia, Krasnodar), Monolit – Yug (Russia, Krasnodar), SK ATISS (Russia, Krasnodar). He promotes the Company's initiatives and projects on the international arena, cooperates with large international investment structures and with business community, huge oil and gas market players, providing complex worldwide oil products trade transactions with high efficiency and reliability. His long term and successful experience in implementation of the most ambitious projects with multi-million investment allows the Company to implement its strategic objectives.</p>
+
+				<img src="images/Myros L.png" id="small-logo"></img>
+				<p id="mediumletters9">Lovska Myroslav (Chief project designer)</p>
+				<p id="smallletters18">Experience in graphic design, UI/UX, Branding and Social Media advertising.
+
+Portfolio on behance ^ 
+www.behance.net/massivedesigngroup<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
 			</div>
-			<div class="one-third">
-				<img src="images/Abhishek Kishor.png" id="small-logo"></img>
-				<p id="mediumletters">Abhishek  Kishor</p>
-				<p id="smallletters3">Blockchain developer and Network<br /> engineer. He is certified in CCNA R&S<br /> and CCNA security. He has worked on<br /> Ethereum and Hyperledger on the<br /> various project including Government<br /> project. He is also passionate about<br /> Hacking & Security.<br /><br /><br /><br /><br /></p>
-			</div>
-			<div class="one-third">
-				<img src="images/Abhishek Krishna.png" id="small-logo"></img>
-				<p id="mediumletters">Abhishek Krishna</p>
-				<p id="smallletters3">Abhishek is a Tech Entrepreneur and<br /> started his first venture 6 years ago.<br /> Since then, he has built several<br /> products and has consulted and<br /> advised a few startups and<br /> corporations. He started coding in<br /> school and has a keen sense of<br /> product design too. He specializes in<br /> building product and technology<br />teams. He currently runs Kcolbchain<br /> and Ojam.</p> 
-			</div>
+
+			<div class="one-fourth">
+        <img src="images/S. NIKOLAYEV.png" id="small-logo"></img>
+        <p id="mediumletters">Sergei Nikolayev</p>
+        <p id="smallletters18">The projects leader at ATTIS Group. After graduating the Belarusian State University of Radio Electronics and Information Technology in 1988, he participated in the development of automated data processing systems at state institutes and customs organizations.
+
+He successfully passed the international course of automation of the US Customs Academy In 1994 and made a decission that it is impossible to implement ambitious and complex projects within state structures. In 1996, the National Bank of Kazakhstan invited him as an IT consultant. So, he started developing two nation-wide projects - the interbank settlement system (Kazakhstan Interbank Settlement Center) and the State Pension System (Kazakhstan State Pension Center and Kazakhstan State Pension Fund). He was the inspiration and the expert for all this time of the company's history in different countries where all projects were implemented, being directly on the hot front, wherever projects are being implemented (Kazakhstan, Russia, the USA, Lithuania, Belarus, China, etc.)</p> 
+        
+          <img src="images/Ellipse 1068.png" id="small-logo"></img>
+        <p id="mediumletters9">Morris Gitonga (Advisor and consultant of marketing)</p>
+        <p id="smallletters18">Morris has been within the blockchain and crypto space for the last 2 years, with excellent online research skills. He has 5 years of exceptional writing and research skills.
+</p> 
+				</div>
+      <div class="one-fourth">
+        <img src="images/Ellipse 1066.png" id="small-logo"></img>
+        <p id="mediumletters">Edward H C Bowen<br /><br /></p>
+        <p id="smallletters18">Edward Bowen began his career in the British Army as an infantry officer having been a Royal Military Academy student in the early 1990s. In 1992, Edward came to Latvia as an advisor to the Latvian Ministry of Defense. Thereafter Edward was a development director of Kolonna Group and setup Celcius Limited – a logistics company specializing in food products. Celcius serviced sea and land operations on behalf of clients from the Americas with principal markets in Russia, Kazakhstan and Uzbekistan. In 1997, Edward became Managing Director of Furness Terminals, a joint venture with Furness Group from Holland. Furness Terminals serviced ship cargo through Riga port for clients, including Tyson Foods, the largest protein company in the world. Subsequently the company was sold to Maersk Group from Denmark in 2001. In 2004, Edward became co-founder of SABRE Invest. Edward has also founded the British Chamber of Commerce in Latvia and established the first Latvian professional cycling team, currently ranked in the top ten of the European Tour.
+</p> 
+      
+        <img src="images/W. Ngary.png" id="small-logo"></img>
+        <p id="mediumletters9">Wilson Ngary</p>
+        <p id="smallletters18">Wilson has a lot of experience in developing Decentralized applications and has been active in several Blockchain projects as a developer and copywriter.<br /><br /><br /><br /><br /><br /></p> 
+      </div>
 		</div>
 	</div>
 	<div class="section" id="contact">
