@@ -647,9 +647,9 @@ He successfully passed the international course of automation of the US Customs 
         <p id="smallletters18">Edward Bowen began his career in the British Army as an infantry officer having been a Royal Military Academy student in the early 1990s. In 1992, Edward came to Latvia as an advisor to the Latvian Ministry of Defense. Thereafter Edward was a development director of Kolonna Group and setup Celcius Limited – a logistics company specializing in food products. Celcius serviced sea and land operations on behalf of clients from the Americas with principal markets in Russia, Kazakhstan and Uzbekistan. In 1997, Edward became Managing Director of Furness Terminals, a joint venture with Furness Group from Holland. Furness Terminals serviced ship cargo through Riga port for clients, including Tyson Foods, the largest protein company in the world. Subsequently the company was sold to Maersk Group from Denmark in 2001. In 2004, Edward became co-founder of SABRE Invest. Edward has also founded the British Chamber of Commerce in Latvia and established the first Latvian professional cycling team, currently ranked in the top ten of the European Tour.
 </p> 
       
-        <img src="images/W. Ngary.png" id="small-logo"></img>
-        <p id="mediumletters9">Wilson Ngary</p>
-        <p id="smallletters18">Wilson has a lot of experience in developing Decentralized applications and has been active in several Blockchain projects as a developer and copywriter.<br /><br /><br /><br /><br /><br /></p> 
+        <img src="images/Abhishek Kishor.png" id="small-logo"></img>
+        <p id="mediumletters9">Abhishek Kishor</p>
+        <p id="smallletters18">Blockchain developer and Network engineer. He is certified in CCNA R&S and CCNA security. He has worked on Ethereum and Hyperledger on the various project including Government project. He is also passionate about Hacking & Security.<br /><br /><br /></p> 
       </div>
 		</div>
 	</div>
